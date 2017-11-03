@@ -1,4 +1,4 @@
-local TP_M1894_PlayerStandard_check_action_throw_grenade = PlayerStandard._check_action_throw_grenade
+local ThirdWeapon_PlayerStandard_check_action_throw_grenade = PlayerStandard._check_action_throw_grenade
 
 function PlayerStandard:_check_action_throw_grenade(t, input)
 	local action_wanted = input.btn_throw_grenade_press
@@ -21,5 +21,9 @@ function PlayerStandard:_check_action_throw_grenade(t, input)
 		self:_start_action_unequip_weapon(t, {selection_wanted = _TP_selection})
 		return
 	end
-	return TP_M1894_PlayerStandard_check_action_throw_grenade(self, t, input)
+	return ThirdWeapon_PlayerStandard_check_action_throw_grenade(self, t, input)
+end
+
+if Announcer then
+	Announcer:AddHostMod('Third Weapon, (Replace throwables with guns)')
 end
