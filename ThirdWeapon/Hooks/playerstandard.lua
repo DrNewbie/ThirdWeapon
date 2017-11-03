@@ -13,9 +13,9 @@ function PlayerStandard:_check_action_throw_grenade(t, input)
 		return
 	end
 	local _TP = managers.blackmarket:equipped_grenade()
-	local _TP_weapon_id = tweak_data.projectiles[_TP].tp_na
-	local _TP_selection = tweak_data.weapon[_TP_weapon_id].use_data.selection_index
 	if table.contains(tweak_data.new_projectiles, _TP) then
+		local _TP_weapon_id = tweak_data.projectiles[_TP].tp_na
+		local _TP_selection = tweak_data.weapon[_TP_weapon_id].use_data.selection_index
 		self._ext_inventory:equip_selected_third(true)
 		self._unequip_weapon_expire_t = nil
 		self:_start_action_unequip_weapon(t, {selection_wanted = _TP_selection})
