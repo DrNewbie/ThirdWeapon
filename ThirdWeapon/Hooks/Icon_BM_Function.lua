@@ -5,7 +5,9 @@ function BlackMarketManager:player_loadout_data(...)
 	if _R.grenade then
 		if _R.grenade.item_texture:find('guis/textures/pd2/blackmarket/icons/grenades/frag_tp_') then
 			local _wp_id = _R.grenade.item_texture:gsub('guis/textures/pd2/blackmarket/icons/grenades/frag_tp_', '')
-			_R.grenade.item_texture = managers.blackmarket:get_weapon_icon_path(_wp_id)
+			if tweak_data.weapon[_wp_id] then
+				_R.grenade.item_texture = managers.blackmarket:get_weapon_icon_path(_wp_id)
+			end			
 		end
 	end
 	return _R

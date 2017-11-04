@@ -57,7 +57,9 @@ function BlackMarketGui:populate_grenades(data)
 		
 		if new_data.bitmap_texture:find('guis/textures/pd2/blackmarket/icons/grenades/frag_tp_') then
 			local _wp_id = new_data.bitmap_texture:gsub('guis/textures/pd2/blackmarket/icons/grenades/frag_tp_', '')
-			new_data.bitmap_texture = managers.blackmarket:get_weapon_icon_path(_wp_id)
+			if tweak_data.weapon[_wp_id] then
+				new_data.bitmap_texture = managers.blackmarket:get_weapon_icon_path(_wp_id)
+			end
 		end
 
 		if managers.blackmarket:got_new_drop("normal", "grenades", grenade_id) then
