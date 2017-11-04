@@ -102,3 +102,22 @@ function PlayerInventory:add_unit_by_factory_name(factory_name, equip, instant, 
 	
 	return new_unit
 end
+
+local BeThirdWeapon_PlayerInventory_send_equipped_weapon = PlayerInventory._send_equipped_weapon
+
+function PlayerInventory:_send_equipped_weapon()
+	local _TP_Key = self:equipped_unit():name():key()
+	if self._use_tp and self._use_tp[_TP_Key] then
+		local eq_weap_name = self._use_tp[self._use_tp['Storage']]._TP_factory_id
+		local index = self._get_weapon_sync_index(eq_weap_name)
+		if not index then
+			return
+		end
+		local blueprint_string = managers.weapon_factory:blueprint_to_string(eq_weap_name, self._use_tp[self._use_tp['Storage']]._TP_blueprint)
+		local cosmetics_string = ""
+		local cosmetics_id = "nil-1-0"
+		self._unit:network():send("set_equipped_weapon", index, blueprint_string, cosmetics_string)
+		return
+	end
+	BeThirdWeapon_PlayerInventory_send_equipped_weapon(self)
+end

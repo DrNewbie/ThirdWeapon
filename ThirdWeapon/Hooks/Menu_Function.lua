@@ -25,7 +25,7 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "ThirdWeaponOptions", function( menu
 		if _file then
 			_file:write('<mod name=\"ThirdWeapon\"> \n')
 			_file:write('	<Localization directory="Loc" default="english.txt"/> \n')
-			_file:write('	<AssetUpdates id="21226" name="asset_updates" folder_name="ThirdWeapon" version="7" provider="modworkshop"/> \n')
+			_file:write('	<AssetUpdates id="21226" name="asset_updates" folder_name="ThirdWeapon" version="8" provider="modworkshop"/> \n')
 			_file:write('	<Hooks directory="Hooks"> \n')
 			_file:write('		<hook file="Menu_Function.lua" source_file="lib/managers/menumanager"/> \n')
 			_file:write('		<hook file="Icon_BM_Function.lua" source_file="lib/managers/blackmarketmanager"/> \n')
