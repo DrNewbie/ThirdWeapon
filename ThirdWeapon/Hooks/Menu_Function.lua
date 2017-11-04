@@ -25,7 +25,7 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "ThirdWeaponOptions", function( menu
 		if _file then
 			_file:write('<mod name=\"ThirdWeapon\"> \n')
 			_file:write('	<Localization directory="Loc" default="english.txt"/> \n')
-			_file:write('	<AssetUpdates id="21226" name="asset_updates" folder_name="ThirdWeapon" version="6" provider="modworkshop"/> \n')
+			_file:write('	<AssetUpdates id="21226" name="asset_updates" folder_name="ThirdWeapon" version="7" provider="modworkshop"/> \n')
 			_file:write('	<Hooks directory="Hooks"> \n')
 			_file:write('		<hook file="Menu_Function.lua" source_file="lib/managers/menumanager"/> \n')
 			_file:write('		<hook file="Icon_BM_Function.lua" source_file="lib/managers/blackmarketmanager"/> \n')
@@ -41,6 +41,7 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "ThirdWeaponOptions", function( menu
 			_file:write('		<hook file="basenetworksession.lua" source_file="lib/network/base/basenetworksession"/> \n')
 			_file:write('		<hook file="playerstandard.lua" source_file="lib/units/beings/player/states/playerstandard"/> \n')
 			_file:write('		<hook file="playerinventory.lua" source_file="lib/units/beings/player/playerinventory"/> \n')
+			_file:write('		<hook file="newraycastweaponbase.lua" source_file="lib/units/weapons/newraycastweaponbase"/> \n')
 			_file:write('	</Hooks>\n')
 			local _, _, _, _weapon_lists, _, _, _, _, _ = tweak_data.statistics:statistics_table()
 			local _factory_id = ""

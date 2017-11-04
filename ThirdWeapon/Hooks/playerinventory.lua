@@ -1,3 +1,5 @@
+local TP_Weapon_Ammo_Cost = 0.45
+
 function PlayerInventory:equip_selected_third(_run)
 	if not _run then
 		return
@@ -25,6 +27,13 @@ function PlayerInventory:equip_selected_third(_run)
 	if not self._use_tp['Eable'] then
 		_TP_factory_id = self._use_tp[self._use_tp['Storage']]._TP_factory_id
 		_TP_blueprint = self._use_tp[self._use_tp['Storage']]._TP_blueprint
+	else
+		for _, weapon in pairs(self._available_selections) do
+			if weapon.unit:base():get_ammo_ratio() < TP_Weapon_Ammo_Cost then
+				managers.hud:show_hint({text = "Ammo isn't enough"})
+				return false
+			end
+		end
 	end
 	if tweak_data.weapon.factory[_TP_factory_id] then
 		self:equip_selected_primary(false)
@@ -37,6 +46,12 @@ function PlayerInventory:equip_selected_third(_run)
 			new_unit:base():set_ammo_total(self._use_tp[_TP_Key]._TP_total)
 			new_unit:base():set_ammo_remaining_in_clip(self._use_tp[_TP_Key]._TP_mag)
 			managers.hud:set_ammo_amount(_TP_selection, new_unit:base():ammo_info())
+			if _TP_Key ~= self._use_tp['Storage'] then
+				for index, weapon in pairs(self._available_selections) do
+					weapon.unit:base():remove_ammo(1 - TP_Weapon_Ammo_Cost)
+					managers.hud:set_ammo_amount(index, weapon.unit:base():ammo_info())
+				end
+			end
 		end
 	end
 end
