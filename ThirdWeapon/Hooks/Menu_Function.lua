@@ -2,7 +2,9 @@ Hooks:Add("LocalizationManagerPostInit", "ThirdWeapon_loc", function(loc)
 	LocalizationManager:add_localized_strings({
 		["ThirdWeapon_menu_title"] = "Third Weapon",
 		["ThirdWeapon_menu_desc"] = " ",
-		["ThirdWeapon_menu_forced_update_all_title"] = "Update",
+		["ThirdWeapon_menu_forced_update_officially_title"] = "Update , Only Official",
+		["ThirdWeapon_menu_forced_update_officially_desc"] = " ",
+		["ThirdWeapon_menu_forced_update_all_title"] = "Update , All",
 		["ThirdWeapon_menu_forced_update_all_desc"] = " "
 	})
 end)
@@ -13,6 +15,8 @@ end)
 
 Hooks:Add("MenuManagerPopulateCustomMenus", "ThirdWeaponOptions", function( menu_manager, nodes )
 	MenuCallbackHandler.ThirdWeapon_menu_forced_update_all_callback = function(self, item)
+		item = item or {}
+		item.update_all = true
 		MenuCallbackHandler.ThirdWeapon_menu_forced_update_callback(self, item)
 	end	
 	MenuCallbackHandler.ThirdWeapon_menu_forced_update_callback = function(self, item)
@@ -38,12 +42,15 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "ThirdWeaponOptions", function( menu
 			_file:write('		<hook file="playerstandard.lua" source_file="lib/units/beings/player/states/playerstandard"/> \n')
 			_file:write('		<hook file="playerinventory.lua" source_file="lib/units/beings/player/playerinventory"/> \n')
 			_file:write('	</Hooks>\n')
-			local _weapon_lists = {}
+			local _, _, _, _weapon_lists, _, _, _, _, _ = tweak_data.statistics:statistics_table()
 			local _factory_id = ""
-			for _weapon_id, _ in pairs(tweak_data.weapon) do
-				_factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(_weapon_id)
-				if _factory_id then
-					table.insert(_weapon_lists, _weapon_id)
+			if item.update_all then
+				_weapon_lists = {}
+				for _weapon_id, _ in pairs(tweak_data.weapon) do
+					_factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(_weapon_id)
+					if _factory_id then
+						table.insert(_weapon_lists, _weapon_id)
+					end
 				end
 			end
 			_file:write('	<AddFiles directory="Assets"> \n')
@@ -156,6 +163,13 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "ThirdWeaponOptions", function( menu
 			managers.system_menu:show(_dialog_data)
 		end
 	end
+	MenuHelper:AddButton({
+		id = "ThirdWeapon_menu_forced_update_callback",
+		title = "ThirdWeapon_menu_forced_update_officially_title",
+		desc = "ThirdWeapon_menu_forced_update_officially_desc",
+		callback = "ThirdWeapon_menu_forced_update_callback",
+		menu_id = "ThirdWeapon_menu",
+	})
 	MenuHelper:AddButton({
 		id = "ThirdWeapon_menu_forced_update_all_callback",
 		title = "ThirdWeapon_menu_forced_update_all_title",
