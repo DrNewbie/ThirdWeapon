@@ -1,3 +1,44 @@
+_G.ThirdWeaponMods = _G.ThirdWeaponMods or {}
+
+ThirdWeaponMods.menu_id = "ThirdWeaponMods_menu_id"
+ThirdWeaponMods.ModPath = ModPath
+ThirdWeaponMods.SaveFile = ThirdWeaponMods.SaveFile or SavePath .. "ThirdWeaponMods.txt"
+ThirdWeaponMods.Version = 9
+
+ThirdWeaponMods.settings = {
+	Enable = 1
+}
+
+function ThirdWeaponMods:Reset()
+	self.settings = {
+		Enable = 1
+	}
+	self:Save()
+end
+
+function ThirdWeaponMods:Load(supp, current_stage)
+	local _file = io.open(self.SaveFile, "r")
+	if _file then
+		local _data = tostring(_file:read("*all"))
+		_data = _data:gsub('%[%]', '{}')
+		self.settings = json.decode(_data)
+		_file:close()
+		self:Save()
+	else
+		self:Reset()
+	end
+end
+
+function ThirdWeaponMods:Save()
+	local _file = io.open(self.SaveFile, "w+")
+	if _file then
+		_file:write(json.encode(self.settings))
+		_file:close()
+	end
+end
+
+ThirdWeaponMods:Load()
+
 Hooks:Add("LocalizationManagerPostInit", "ThirdWeapon_loc", function(loc)
 	LocalizationManager:add_localized_strings({
 		["ThirdWeapon_menu_title"] = "Third Weapon",
@@ -5,7 +46,9 @@ Hooks:Add("LocalizationManagerPostInit", "ThirdWeapon_loc", function(loc)
 		["ThirdWeapon_menu_forced_update_officially_title"] = "Update , Only Official",
 		["ThirdWeapon_menu_forced_update_officially_desc"] = " ",
 		["ThirdWeapon_menu_forced_update_all_title"] = "Update , All",
-		["ThirdWeapon_menu_forced_update_all_desc"] = " "
+		["ThirdWeapon_menu_forced_update_all_desc"] = " ",
+		["ThirdWeapon_menu_apply_title"] = "Apply to Third Weapon",
+		["ThirdWeapon_menu_clean_title"] = "Clean to Third Weapon"
 	})
 end)
 
@@ -25,11 +68,12 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "ThirdWeaponOptions", function( menu
 		if _file then
 			_file:write('<mod name=\"ThirdWeapon\"> \n')
 			_file:write('	<Localization directory="Loc" default="english.txt"/> \n')
-			_file:write('	<AssetUpdates id="21226" name="asset_updates" folder_name="ThirdWeapon" version="8" provider="modworkshop"/> \n')
+			_file:write('	<AssetUpdates id="21226" name="asset_updates" folder_name="ThirdWeapon" version="'..ThirdWeaponMods.Version..'" provider="modworkshop"/> \n')
 			_file:write('	<Hooks directory="Hooks"> \n')
 			_file:write('		<hook file="Menu_Function.lua" source_file="lib/managers/menumanager"/> \n')
 			_file:write('		<hook file="Icon_BM_Function.lua" source_file="lib/managers/blackmarketmanager"/> \n')
 			_file:write('		<hook file="Icon_HD_Function.lua" source_file="lib/managers/menu/blackmarketgui"/> \n')
+			_file:write('		<hook file="MOD_Apply_Function.lua" source_file="lib/managers/menu/blackmarketgui"/> \n')
 			_file:write('		<hook file="tweakdata.lua" source_file="lib/tweak_data/tweakdata"/> \n')
 			_file:write('		<hook file="tweakdatapd2.lua" source_file="lib/tweak_data/tweakdatapd2"/> \n')
 			_file:write('		<hook file="projectilestweakdata.lua" source_file="lib/tweak_data/blackmarket/projectilestweakdata"/> \n')
@@ -65,7 +109,24 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "ThirdWeaponOptions", function( menu
 						local _wfd = tweak_data.weapon.factory[_factory_id] or nil
 						if _wd and _wfd then
 							table.insert(_frag_ids, 'frag_tp_'.._weapon_id)
-							_new_named_ids['bm_'.._frag_ids[#_frag_ids]] = managers.localization:to_upper_text(_wd.name_id)
+							_new_named_ids['bm_'.._frag_ids[#_frag_ids]..'_name'] = managers.localization:to_upper_text(_wd.name_id)
+							local _desc_id = managers.localization:to_upper_text(tostring(_wd.desc_id))
+							local _description_id = managers.localization:to_upper_text(tostring(_wd.description_id))
+							local _desc = ''
+							if _desc_id:find('ERROR') and not _description_id:find('ERROR') then
+								_desc = _description_id
+							elseif not _desc_id:find('ERROR') and _description_id:find('ERROR') then
+								_desc = _desc_id
+							elseif not _desc_id:find('ERROR') and not _description_id:find('ERROR') then
+								if _desc_id:len() >= _description_id:len() then
+									_desc = _desc_id
+								else
+									_desc = _description_id
+								end
+							else
+								_desc = ' '
+							end
+							_new_named_ids['bm_'.._frag_ids[#_frag_ids]..'_desc'] = _desc
 							_file:write('		<unit path="units/payday2/weapons/wpn_frag_grenade_com/'.. _frag_ids[#_frag_ids] ..'"/> \n')
 						end
 					end
@@ -132,7 +193,7 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "ThirdWeaponOptions", function( menu
 			for _, _frag_id in pairs(_frag_ids) do
 				_file:write('tweak_data.projectiles.'.. _frag_id ..' = {} \n')
 				_file:write('tweak_data.projectiles.'.. _frag_id ..' = deep_clone(tweak_data.projectiles.frag_com) \n')
-				_file:write('tweak_data.projectiles.'.. _frag_id ..'.name_id = "bm_'.. _frag_id ..'" \n')
+				_file:write('tweak_data.projectiles.'.. _frag_id ..'.name_id = "bm_'.. _frag_id ..'_name" \n')
 				_file:write('tweak_data.projectiles.'.. _frag_id ..'.base_on = "concussion" \n')
 				_file:write('tweak_data.projectiles.'.. _frag_id ..'.tp_on = "'.. managers.weapon_factory:get_factory_id_by_weapon_id(_frag_id:gsub('frag_tp_', '')) ..'" \n')
 				_file:write('tweak_data.projectiles.'.. _frag_id ..'.tp_na = "'.. _frag_id:gsub('frag_tp_', '') ..'" \n')
@@ -145,8 +206,8 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "ThirdWeaponOptions", function( menu
 			for _, _frag_id in pairs(_frag_ids) do
 				_file:write('	self.projectiles.'.. _frag_id ..' = {} \n')
 				_file:write('	self.projectiles.'.. _frag_id ..' = deep_clone(self.projectiles.frag) \n')
-				_file:write('	self.projectiles.'.. _frag_id ..'.name_id = "bm_'.. _frag_id ..'" \n')
-				_file:write('	self.projectiles.'.. _frag_id ..'.desc_id = "bm_'.. _frag_id ..'" \n')
+				_file:write('	self.projectiles.'.. _frag_id ..'.name_id = "bm_'.. _frag_id ..'_name" \n')
+				_file:write('	self.projectiles.'.. _frag_id ..'.desc_id = "bm_'.. _frag_id ..'_desc" \n')
 				_file:write('	self.projectiles.'.. _frag_id ..'.unit = "units/payday2/weapons/wpn_frag_grenade_com/'.. _frag_id ..'" \n')
 				_file:write('	self.projectiles.'.. _frag_id ..'.no_cheat_count = true \n')
 				_file:write('	self.projectiles.'.. _frag_id ..'.time_cheat = 0.1 \n')
@@ -155,13 +216,12 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "ThirdWeaponOptions", function( menu
 			end
 			_file:write('end) \n')
 			_file:close()
-			local _dialog_data = {
+			managers.system_menu:show({
 				title = "[Third Weapon]",
 				text = "Please reboot the game.",
 				button_list = {{ text = "[OK]", is_cancel_button = true }},
 				id = tostring(math.random(0,0xFFFFFFFF))
-			}
-			managers.system_menu:show(_dialog_data)
+			})
 		end
 	end
 	MenuHelper:AddButton({

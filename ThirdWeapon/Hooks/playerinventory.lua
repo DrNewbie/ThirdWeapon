@@ -1,3 +1,5 @@
+_G.ThirdWeaponMods = _G.ThirdWeaponMods or {}
+
 local TP_Weapon_Ammo_Cost = 0.45
 
 function PlayerInventory:equip_selected_third(_run)
@@ -20,6 +22,9 @@ function PlayerInventory:equip_selected_third(_run)
 		_TP_mag = mag or 0,
 		_TP_total = total or 0
 	}
+	if ThirdWeaponMods.settings[_TP] then
+		_TP_blueprint = ThirdWeaponMods.settings[_TP]
+	end
 	if not self._use_tp['Storage'] then
 		self._use_tp['Storage'] = _TP_Key
 	end
