@@ -1,10 +1,6 @@
 Hooks:PostHook(TweakData, "_init_pd2", "ThirdWeapon_TweakData_init_pd2", function(self) 
 	self.hud_icons.frag_tp_aa12 = {} 
 	self.hud_icons.frag_tp_aa12 = deep_clone(self.hud_icons.dynamite_grenade) 
-	self.hud_icons.frag_tp_aek971 = {} 
-	self.hud_icons.frag_tp_aek971 = deep_clone(self.hud_icons.dynamite_grenade) 
-	self.hud_icons.frag_tp_ak12 = {} 
-	self.hud_icons.frag_tp_ak12 = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_ak5 = {} 
 	self.hud_icons.frag_tp_ak5 = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_ak74 = {} 
@@ -31,8 +27,6 @@ Hooks:PostHook(TweakData, "_init_pd2", "ThirdWeapon_TweakData_init_pd2", functio
 	self.hud_icons.frag_tp_b92fs = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_baka = {} 
 	self.hud_icons.frag_tp_baka = deep_clone(self.hud_icons.dynamite_grenade) 
-	self.hud_icons.frag_tp_bar = {} 
-	self.hud_icons.frag_tp_bar = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_basset = {} 
 	self.hud_icons.frag_tp_basset = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_benelli = {} 
@@ -83,8 +77,6 @@ Hooks:PostHook(TweakData, "_init_pd2", "ThirdWeapon_TweakData_init_pd2", functio
 	self.hud_icons.frag_tp_g36 = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_galil = {} 
 	self.hud_icons.frag_tp_galil = deep_clone(self.hud_icons.dynamite_grenade) 
-	self.hud_icons.frag_tp_galilace = {} 
-	self.hud_icons.frag_tp_galilace = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_glock_17 = {} 
 	self.hud_icons.frag_tp_glock_17 = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_glock_18c = {} 
@@ -105,8 +97,6 @@ Hooks:PostHook(TweakData, "_init_pd2", "ThirdWeapon_TweakData_init_pd2", functio
 	self.hud_icons.frag_tp_jowi = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_judge = {} 
 	self.hud_icons.frag_tp_judge = deep_clone(self.hud_icons.dynamite_grenade) 
-	self.hud_icons.frag_tp_k3 = {} 
-	self.hud_icons.frag_tp_k3 = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_ksg = {} 
 	self.hud_icons.frag_tp_ksg = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_l85a2 = {} 
@@ -115,14 +105,10 @@ Hooks:PostHook(TweakData, "_init_pd2", "ThirdWeapon_TweakData_init_pd2", functio
 	self.hud_icons.frag_tp_lemming = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_long = {} 
 	self.hud_icons.frag_tp_long = deep_clone(self.hud_icons.dynamite_grenade) 
-	self.hud_icons.frag_tp_lsat = {} 
-	self.hud_icons.frag_tp_lsat = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_m134 = {} 
 	self.hud_icons.frag_tp_m134 = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_m16 = {} 
 	self.hud_icons.frag_tp_m16 = deep_clone(self.hud_icons.dynamite_grenade) 
-	self.hud_icons.frag_tp_m1894 = {} 
-	self.hud_icons.frag_tp_m1894 = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_m1928 = {} 
 	self.hud_icons.frag_tp_m1928 = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_m249 = {} 
@@ -133,8 +119,6 @@ Hooks:PostHook(TweakData, "_init_pd2", "ThirdWeapon_TweakData_init_pd2", functio
 	self.hud_icons.frag_tp_m37 = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_m45 = {} 
 	self.hud_icons.frag_tp_m45 = deep_clone(self.hud_icons.dynamite_grenade) 
-	self.hud_icons.frag_tp_m60 = {} 
-	self.hud_icons.frag_tp_m60 = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_m95 = {} 
 	self.hud_icons.frag_tp_m95 = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_mac10 = {} 
@@ -153,8 +137,6 @@ Hooks:PostHook(TweakData, "_init_pd2", "ThirdWeapon_TweakData_init_pd2", functio
 	self.hud_icons.frag_tp_mp9 = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_msr = {} 
 	self.hud_icons.frag_tp_msr = deep_clone(self.hud_icons.dynamite_grenade) 
-	self.hud_icons.frag_tp_negev = {} 
-	self.hud_icons.frag_tp_negev = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_new_m14 = {} 
 	self.hud_icons.frag_tp_new_m14 = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_new_m4 = {} 
@@ -175,8 +157,6 @@ Hooks:PostHook(TweakData, "_init_pd2", "ThirdWeapon_TweakData_init_pd2", functio
 	self.hud_icons.frag_tp_par = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_peacemaker = {} 
 	self.hud_icons.frag_tp_peacemaker = deep_clone(self.hud_icons.dynamite_grenade) 
-	self.hud_icons.frag_tp_pecheneg = {} 
-	self.hud_icons.frag_tp_pecheneg = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_pl14 = {} 
 	self.hud_icons.frag_tp_pl14 = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_plainsrider = {} 
@@ -185,10 +165,6 @@ Hooks:PostHook(TweakData, "_init_pd2", "ThirdWeapon_TweakData_init_pd2", functio
 	self.hud_icons.frag_tp_polymer = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_ppk = {} 
 	self.hud_icons.frag_tp_ppk = deep_clone(self.hud_icons.dynamite_grenade) 
-	self.hud_icons.frag_tp_qbs = {} 
-	self.hud_icons.frag_tp_qbs = deep_clone(self.hud_icons.dynamite_grenade) 
-	self.hud_icons.frag_tp_qbu88 = {} 
-	self.hud_icons.frag_tp_qbu88 = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_r870 = {} 
 	self.hud_icons.frag_tp_r870 = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_r93 = {} 
@@ -197,8 +173,6 @@ Hooks:PostHook(TweakData, "_init_pd2", "ThirdWeapon_TweakData_init_pd2", functio
 	self.hud_icons.frag_tp_ray = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_rota = {} 
 	self.hud_icons.frag_tp_rota = deep_clone(self.hud_icons.dynamite_grenade) 
-	self.hud_icons.frag_tp_rpd = {} 
-	self.hud_icons.frag_tp_rpd = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_rpg7 = {} 
 	self.hud_icons.frag_tp_rpg7 = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_rpk = {} 
@@ -223,8 +197,6 @@ Hooks:PostHook(TweakData, "_init_pd2", "ThirdWeapon_TweakData_init_pd2", functio
 	self.hud_icons.frag_tp_shrew = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_siltstone = {} 
 	self.hud_icons.frag_tp_siltstone = deep_clone(self.hud_icons.dynamite_grenade) 
-	self.hud_icons.frag_tp_sks = {} 
-	self.hud_icons.frag_tp_sks = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_sparrow = {} 
 	self.hud_icons.frag_tp_sparrow = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_spas12 = {} 
@@ -243,24 +215,16 @@ Hooks:PostHook(TweakData, "_init_pd2", "ThirdWeapon_TweakData_init_pd2", functio
 	self.hud_icons.frag_tp_tecci = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_tti = {} 
 	self.hud_icons.frag_tp_tti = deep_clone(self.hud_icons.dynamite_grenade) 
-	self.hud_icons.frag_tp_ultimax = {} 
-	self.hud_icons.frag_tp_ultimax = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_usp = {} 
 	self.hud_icons.frag_tp_usp = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_uzi = {} 
 	self.hud_icons.frag_tp_uzi = deep_clone(self.hud_icons.dynamite_grenade) 
-	self.hud_icons.frag_tp_vepr12 = {} 
-	self.hud_icons.frag_tp_vepr12 = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_vhs = {} 
 	self.hud_icons.frag_tp_vhs = deep_clone(self.hud_icons.dynamite_grenade) 
-	self.hud_icons.frag_tp_volmer = {} 
-	self.hud_icons.frag_tp_volmer = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_wa2000 = {} 
 	self.hud_icons.frag_tp_wa2000 = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_winchester1874 = {} 
 	self.hud_icons.frag_tp_winchester1874 = deep_clone(self.hud_icons.dynamite_grenade) 
-	self.hud_icons.frag_tp_winchester1894 = {} 
-	self.hud_icons.frag_tp_winchester1894 = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_x_1911 = {} 
 	self.hud_icons.frag_tp_x_1911 = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_x_akmsu = {} 
@@ -287,8 +251,4 @@ Hooks:PostHook(TweakData, "_init_pd2", "ThirdWeapon_TweakData_init_pd2", functio
 	self.hud_icons.frag_tp_x_sr2 = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_x_usp = {} 
 	self.hud_icons.frag_tp_x_usp = deep_clone(self.hud_icons.dynamite_grenade) 
-	self.hud_icons.frag_tp_xm21 = {} 
-	self.hud_icons.frag_tp_xm21 = deep_clone(self.hud_icons.dynamite_grenade) 
-	self.hud_icons.frag_tp_xm8 = {} 
-	self.hud_icons.frag_tp_xm8 = deep_clone(self.hud_icons.dynamite_grenade) 
 end) 

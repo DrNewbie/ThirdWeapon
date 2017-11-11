@@ -8,24 +8,6 @@ Hooks:PostHook(BlackMarketTweakData, "_init_projectiles", "ThirdWeapon_BMTweakDa
 	self.projectiles.frag_tp_aa12.time_cheat = 0.1 
 	self.projectiles.frag_tp_aa12.dlc = nil 
 	table.insert(self._projectiles_index, "frag_tp_aa12") 
-	self.projectiles.frag_tp_aek971 = {} 
-	self.projectiles.frag_tp_aek971 = deep_clone(self.projectiles.frag) 
-	self.projectiles.frag_tp_aek971.name_id = "bm_frag_tp_aek971_name" 
-	self.projectiles.frag_tp_aek971.desc_id = "bm_frag_tp_aek971_desc" 
-	self.projectiles.frag_tp_aek971.unit = "units/payday2/weapons/wpn_frag_grenade_com/frag_tp_aek971" 
-	self.projectiles.frag_tp_aek971.no_cheat_count = true 
-	self.projectiles.frag_tp_aek971.time_cheat = 0.1 
-	self.projectiles.frag_tp_aek971.dlc = nil 
-	table.insert(self._projectiles_index, "frag_tp_aek971") 
-	self.projectiles.frag_tp_ak12 = {} 
-	self.projectiles.frag_tp_ak12 = deep_clone(self.projectiles.frag) 
-	self.projectiles.frag_tp_ak12.name_id = "bm_frag_tp_ak12_name" 
-	self.projectiles.frag_tp_ak12.desc_id = "bm_frag_tp_ak12_desc" 
-	self.projectiles.frag_tp_ak12.unit = "units/payday2/weapons/wpn_frag_grenade_com/frag_tp_ak12" 
-	self.projectiles.frag_tp_ak12.no_cheat_count = true 
-	self.projectiles.frag_tp_ak12.time_cheat = 0.1 
-	self.projectiles.frag_tp_ak12.dlc = nil 
-	table.insert(self._projectiles_index, "frag_tp_ak12") 
 	self.projectiles.frag_tp_ak5 = {} 
 	self.projectiles.frag_tp_ak5 = deep_clone(self.projectiles.frag) 
 	self.projectiles.frag_tp_ak5.name_id = "bm_frag_tp_ak5_name" 
@@ -143,15 +125,6 @@ Hooks:PostHook(BlackMarketTweakData, "_init_projectiles", "ThirdWeapon_BMTweakDa
 	self.projectiles.frag_tp_baka.time_cheat = 0.1 
 	self.projectiles.frag_tp_baka.dlc = nil 
 	table.insert(self._projectiles_index, "frag_tp_baka") 
-	self.projectiles.frag_tp_bar = {} 
-	self.projectiles.frag_tp_bar = deep_clone(self.projectiles.frag) 
-	self.projectiles.frag_tp_bar.name_id = "bm_frag_tp_bar_name" 
-	self.projectiles.frag_tp_bar.desc_id = "bm_frag_tp_bar_desc" 
-	self.projectiles.frag_tp_bar.unit = "units/payday2/weapons/wpn_frag_grenade_com/frag_tp_bar" 
-	self.projectiles.frag_tp_bar.no_cheat_count = true 
-	self.projectiles.frag_tp_bar.time_cheat = 0.1 
-	self.projectiles.frag_tp_bar.dlc = nil 
-	table.insert(self._projectiles_index, "frag_tp_bar") 
 	self.projectiles.frag_tp_basset = {} 
 	self.projectiles.frag_tp_basset = deep_clone(self.projectiles.frag) 
 	self.projectiles.frag_tp_basset.name_id = "bm_frag_tp_basset_name" 
@@ -377,15 +350,6 @@ Hooks:PostHook(BlackMarketTweakData, "_init_projectiles", "ThirdWeapon_BMTweakDa
 	self.projectiles.frag_tp_galil.time_cheat = 0.1 
 	self.projectiles.frag_tp_galil.dlc = nil 
 	table.insert(self._projectiles_index, "frag_tp_galil") 
-	self.projectiles.frag_tp_galilace = {} 
-	self.projectiles.frag_tp_galilace = deep_clone(self.projectiles.frag) 
-	self.projectiles.frag_tp_galilace.name_id = "bm_frag_tp_galilace_name" 
-	self.projectiles.frag_tp_galilace.desc_id = "bm_frag_tp_galilace_desc" 
-	self.projectiles.frag_tp_galilace.unit = "units/payday2/weapons/wpn_frag_grenade_com/frag_tp_galilace" 
-	self.projectiles.frag_tp_galilace.no_cheat_count = true 
-	self.projectiles.frag_tp_galilace.time_cheat = 0.1 
-	self.projectiles.frag_tp_galilace.dlc = nil 
-	table.insert(self._projectiles_index, "frag_tp_galilace") 
 	self.projectiles.frag_tp_glock_17 = {} 
 	self.projectiles.frag_tp_glock_17 = deep_clone(self.projectiles.frag) 
 	self.projectiles.frag_tp_glock_17.name_id = "bm_frag_tp_glock_17_name" 
@@ -476,15 +440,6 @@ Hooks:PostHook(BlackMarketTweakData, "_init_projectiles", "ThirdWeapon_BMTweakDa
 	self.projectiles.frag_tp_judge.time_cheat = 0.1 
 	self.projectiles.frag_tp_judge.dlc = nil 
 	table.insert(self._projectiles_index, "frag_tp_judge") 
-	self.projectiles.frag_tp_k3 = {} 
-	self.projectiles.frag_tp_k3 = deep_clone(self.projectiles.frag) 
-	self.projectiles.frag_tp_k3.name_id = "bm_frag_tp_k3_name" 
-	self.projectiles.frag_tp_k3.desc_id = "bm_frag_tp_k3_desc" 
-	self.projectiles.frag_tp_k3.unit = "units/payday2/weapons/wpn_frag_grenade_com/frag_tp_k3" 
-	self.projectiles.frag_tp_k3.no_cheat_count = true 
-	self.projectiles.frag_tp_k3.time_cheat = 0.1 
-	self.projectiles.frag_tp_k3.dlc = nil 
-	table.insert(self._projectiles_index, "frag_tp_k3") 
 	self.projectiles.frag_tp_ksg = {} 
 	self.projectiles.frag_tp_ksg = deep_clone(self.projectiles.frag) 
 	self.projectiles.frag_tp_ksg.name_id = "bm_frag_tp_ksg_name" 
@@ -521,15 +476,6 @@ Hooks:PostHook(BlackMarketTweakData, "_init_projectiles", "ThirdWeapon_BMTweakDa
 	self.projectiles.frag_tp_long.time_cheat = 0.1 
 	self.projectiles.frag_tp_long.dlc = nil 
 	table.insert(self._projectiles_index, "frag_tp_long") 
-	self.projectiles.frag_tp_lsat = {} 
-	self.projectiles.frag_tp_lsat = deep_clone(self.projectiles.frag) 
-	self.projectiles.frag_tp_lsat.name_id = "bm_frag_tp_lsat_name" 
-	self.projectiles.frag_tp_lsat.desc_id = "bm_frag_tp_lsat_desc" 
-	self.projectiles.frag_tp_lsat.unit = "units/payday2/weapons/wpn_frag_grenade_com/frag_tp_lsat" 
-	self.projectiles.frag_tp_lsat.no_cheat_count = true 
-	self.projectiles.frag_tp_lsat.time_cheat = 0.1 
-	self.projectiles.frag_tp_lsat.dlc = nil 
-	table.insert(self._projectiles_index, "frag_tp_lsat") 
 	self.projectiles.frag_tp_m134 = {} 
 	self.projectiles.frag_tp_m134 = deep_clone(self.projectiles.frag) 
 	self.projectiles.frag_tp_m134.name_id = "bm_frag_tp_m134_name" 
@@ -548,15 +494,6 @@ Hooks:PostHook(BlackMarketTweakData, "_init_projectiles", "ThirdWeapon_BMTweakDa
 	self.projectiles.frag_tp_m16.time_cheat = 0.1 
 	self.projectiles.frag_tp_m16.dlc = nil 
 	table.insert(self._projectiles_index, "frag_tp_m16") 
-	self.projectiles.frag_tp_m1894 = {} 
-	self.projectiles.frag_tp_m1894 = deep_clone(self.projectiles.frag) 
-	self.projectiles.frag_tp_m1894.name_id = "bm_frag_tp_m1894_name" 
-	self.projectiles.frag_tp_m1894.desc_id = "bm_frag_tp_m1894_desc" 
-	self.projectiles.frag_tp_m1894.unit = "units/payday2/weapons/wpn_frag_grenade_com/frag_tp_m1894" 
-	self.projectiles.frag_tp_m1894.no_cheat_count = true 
-	self.projectiles.frag_tp_m1894.time_cheat = 0.1 
-	self.projectiles.frag_tp_m1894.dlc = nil 
-	table.insert(self._projectiles_index, "frag_tp_m1894") 
 	self.projectiles.frag_tp_m1928 = {} 
 	self.projectiles.frag_tp_m1928 = deep_clone(self.projectiles.frag) 
 	self.projectiles.frag_tp_m1928.name_id = "bm_frag_tp_m1928_name" 
@@ -602,15 +539,6 @@ Hooks:PostHook(BlackMarketTweakData, "_init_projectiles", "ThirdWeapon_BMTweakDa
 	self.projectiles.frag_tp_m45.time_cheat = 0.1 
 	self.projectiles.frag_tp_m45.dlc = nil 
 	table.insert(self._projectiles_index, "frag_tp_m45") 
-	self.projectiles.frag_tp_m60 = {} 
-	self.projectiles.frag_tp_m60 = deep_clone(self.projectiles.frag) 
-	self.projectiles.frag_tp_m60.name_id = "bm_frag_tp_m60_name" 
-	self.projectiles.frag_tp_m60.desc_id = "bm_frag_tp_m60_desc" 
-	self.projectiles.frag_tp_m60.unit = "units/payday2/weapons/wpn_frag_grenade_com/frag_tp_m60" 
-	self.projectiles.frag_tp_m60.no_cheat_count = true 
-	self.projectiles.frag_tp_m60.time_cheat = 0.1 
-	self.projectiles.frag_tp_m60.dlc = nil 
-	table.insert(self._projectiles_index, "frag_tp_m60") 
 	self.projectiles.frag_tp_m95 = {} 
 	self.projectiles.frag_tp_m95 = deep_clone(self.projectiles.frag) 
 	self.projectiles.frag_tp_m95.name_id = "bm_frag_tp_m95_name" 
@@ -692,15 +620,6 @@ Hooks:PostHook(BlackMarketTweakData, "_init_projectiles", "ThirdWeapon_BMTweakDa
 	self.projectiles.frag_tp_msr.time_cheat = 0.1 
 	self.projectiles.frag_tp_msr.dlc = nil 
 	table.insert(self._projectiles_index, "frag_tp_msr") 
-	self.projectiles.frag_tp_negev = {} 
-	self.projectiles.frag_tp_negev = deep_clone(self.projectiles.frag) 
-	self.projectiles.frag_tp_negev.name_id = "bm_frag_tp_negev_name" 
-	self.projectiles.frag_tp_negev.desc_id = "bm_frag_tp_negev_desc" 
-	self.projectiles.frag_tp_negev.unit = "units/payday2/weapons/wpn_frag_grenade_com/frag_tp_negev" 
-	self.projectiles.frag_tp_negev.no_cheat_count = true 
-	self.projectiles.frag_tp_negev.time_cheat = 0.1 
-	self.projectiles.frag_tp_negev.dlc = nil 
-	table.insert(self._projectiles_index, "frag_tp_negev") 
 	self.projectiles.frag_tp_new_m14 = {} 
 	self.projectiles.frag_tp_new_m14 = deep_clone(self.projectiles.frag) 
 	self.projectiles.frag_tp_new_m14.name_id = "bm_frag_tp_new_m14_name" 
@@ -791,15 +710,6 @@ Hooks:PostHook(BlackMarketTweakData, "_init_projectiles", "ThirdWeapon_BMTweakDa
 	self.projectiles.frag_tp_peacemaker.time_cheat = 0.1 
 	self.projectiles.frag_tp_peacemaker.dlc = nil 
 	table.insert(self._projectiles_index, "frag_tp_peacemaker") 
-	self.projectiles.frag_tp_pecheneg = {} 
-	self.projectiles.frag_tp_pecheneg = deep_clone(self.projectiles.frag) 
-	self.projectiles.frag_tp_pecheneg.name_id = "bm_frag_tp_pecheneg_name" 
-	self.projectiles.frag_tp_pecheneg.desc_id = "bm_frag_tp_pecheneg_desc" 
-	self.projectiles.frag_tp_pecheneg.unit = "units/payday2/weapons/wpn_frag_grenade_com/frag_tp_pecheneg" 
-	self.projectiles.frag_tp_pecheneg.no_cheat_count = true 
-	self.projectiles.frag_tp_pecheneg.time_cheat = 0.1 
-	self.projectiles.frag_tp_pecheneg.dlc = nil 
-	table.insert(self._projectiles_index, "frag_tp_pecheneg") 
 	self.projectiles.frag_tp_pl14 = {} 
 	self.projectiles.frag_tp_pl14 = deep_clone(self.projectiles.frag) 
 	self.projectiles.frag_tp_pl14.name_id = "bm_frag_tp_pl14_name" 
@@ -836,24 +746,6 @@ Hooks:PostHook(BlackMarketTweakData, "_init_projectiles", "ThirdWeapon_BMTweakDa
 	self.projectiles.frag_tp_ppk.time_cheat = 0.1 
 	self.projectiles.frag_tp_ppk.dlc = nil 
 	table.insert(self._projectiles_index, "frag_tp_ppk") 
-	self.projectiles.frag_tp_qbs = {} 
-	self.projectiles.frag_tp_qbs = deep_clone(self.projectiles.frag) 
-	self.projectiles.frag_tp_qbs.name_id = "bm_frag_tp_qbs_name" 
-	self.projectiles.frag_tp_qbs.desc_id = "bm_frag_tp_qbs_desc" 
-	self.projectiles.frag_tp_qbs.unit = "units/payday2/weapons/wpn_frag_grenade_com/frag_tp_qbs" 
-	self.projectiles.frag_tp_qbs.no_cheat_count = true 
-	self.projectiles.frag_tp_qbs.time_cheat = 0.1 
-	self.projectiles.frag_tp_qbs.dlc = nil 
-	table.insert(self._projectiles_index, "frag_tp_qbs") 
-	self.projectiles.frag_tp_qbu88 = {} 
-	self.projectiles.frag_tp_qbu88 = deep_clone(self.projectiles.frag) 
-	self.projectiles.frag_tp_qbu88.name_id = "bm_frag_tp_qbu88_name" 
-	self.projectiles.frag_tp_qbu88.desc_id = "bm_frag_tp_qbu88_desc" 
-	self.projectiles.frag_tp_qbu88.unit = "units/payday2/weapons/wpn_frag_grenade_com/frag_tp_qbu88" 
-	self.projectiles.frag_tp_qbu88.no_cheat_count = true 
-	self.projectiles.frag_tp_qbu88.time_cheat = 0.1 
-	self.projectiles.frag_tp_qbu88.dlc = nil 
-	table.insert(self._projectiles_index, "frag_tp_qbu88") 
 	self.projectiles.frag_tp_r870 = {} 
 	self.projectiles.frag_tp_r870 = deep_clone(self.projectiles.frag) 
 	self.projectiles.frag_tp_r870.name_id = "bm_frag_tp_r870_name" 
@@ -890,15 +782,6 @@ Hooks:PostHook(BlackMarketTweakData, "_init_projectiles", "ThirdWeapon_BMTweakDa
 	self.projectiles.frag_tp_rota.time_cheat = 0.1 
 	self.projectiles.frag_tp_rota.dlc = nil 
 	table.insert(self._projectiles_index, "frag_tp_rota") 
-	self.projectiles.frag_tp_rpd = {} 
-	self.projectiles.frag_tp_rpd = deep_clone(self.projectiles.frag) 
-	self.projectiles.frag_tp_rpd.name_id = "bm_frag_tp_rpd_name" 
-	self.projectiles.frag_tp_rpd.desc_id = "bm_frag_tp_rpd_desc" 
-	self.projectiles.frag_tp_rpd.unit = "units/payday2/weapons/wpn_frag_grenade_com/frag_tp_rpd" 
-	self.projectiles.frag_tp_rpd.no_cheat_count = true 
-	self.projectiles.frag_tp_rpd.time_cheat = 0.1 
-	self.projectiles.frag_tp_rpd.dlc = nil 
-	table.insert(self._projectiles_index, "frag_tp_rpd") 
 	self.projectiles.frag_tp_rpg7 = {} 
 	self.projectiles.frag_tp_rpg7 = deep_clone(self.projectiles.frag) 
 	self.projectiles.frag_tp_rpg7.name_id = "bm_frag_tp_rpg7_name" 
@@ -1007,15 +890,6 @@ Hooks:PostHook(BlackMarketTweakData, "_init_projectiles", "ThirdWeapon_BMTweakDa
 	self.projectiles.frag_tp_siltstone.time_cheat = 0.1 
 	self.projectiles.frag_tp_siltstone.dlc = nil 
 	table.insert(self._projectiles_index, "frag_tp_siltstone") 
-	self.projectiles.frag_tp_sks = {} 
-	self.projectiles.frag_tp_sks = deep_clone(self.projectiles.frag) 
-	self.projectiles.frag_tp_sks.name_id = "bm_frag_tp_sks_name" 
-	self.projectiles.frag_tp_sks.desc_id = "bm_frag_tp_sks_desc" 
-	self.projectiles.frag_tp_sks.unit = "units/payday2/weapons/wpn_frag_grenade_com/frag_tp_sks" 
-	self.projectiles.frag_tp_sks.no_cheat_count = true 
-	self.projectiles.frag_tp_sks.time_cheat = 0.1 
-	self.projectiles.frag_tp_sks.dlc = nil 
-	table.insert(self._projectiles_index, "frag_tp_sks") 
 	self.projectiles.frag_tp_sparrow = {} 
 	self.projectiles.frag_tp_sparrow = deep_clone(self.projectiles.frag) 
 	self.projectiles.frag_tp_sparrow.name_id = "bm_frag_tp_sparrow_name" 
@@ -1097,15 +971,6 @@ Hooks:PostHook(BlackMarketTweakData, "_init_projectiles", "ThirdWeapon_BMTweakDa
 	self.projectiles.frag_tp_tti.time_cheat = 0.1 
 	self.projectiles.frag_tp_tti.dlc = nil 
 	table.insert(self._projectiles_index, "frag_tp_tti") 
-	self.projectiles.frag_tp_ultimax = {} 
-	self.projectiles.frag_tp_ultimax = deep_clone(self.projectiles.frag) 
-	self.projectiles.frag_tp_ultimax.name_id = "bm_frag_tp_ultimax_name" 
-	self.projectiles.frag_tp_ultimax.desc_id = "bm_frag_tp_ultimax_desc" 
-	self.projectiles.frag_tp_ultimax.unit = "units/payday2/weapons/wpn_frag_grenade_com/frag_tp_ultimax" 
-	self.projectiles.frag_tp_ultimax.no_cheat_count = true 
-	self.projectiles.frag_tp_ultimax.time_cheat = 0.1 
-	self.projectiles.frag_tp_ultimax.dlc = nil 
-	table.insert(self._projectiles_index, "frag_tp_ultimax") 
 	self.projectiles.frag_tp_usp = {} 
 	self.projectiles.frag_tp_usp = deep_clone(self.projectiles.frag) 
 	self.projectiles.frag_tp_usp.name_id = "bm_frag_tp_usp_name" 
@@ -1124,15 +989,6 @@ Hooks:PostHook(BlackMarketTweakData, "_init_projectiles", "ThirdWeapon_BMTweakDa
 	self.projectiles.frag_tp_uzi.time_cheat = 0.1 
 	self.projectiles.frag_tp_uzi.dlc = nil 
 	table.insert(self._projectiles_index, "frag_tp_uzi") 
-	self.projectiles.frag_tp_vepr12 = {} 
-	self.projectiles.frag_tp_vepr12 = deep_clone(self.projectiles.frag) 
-	self.projectiles.frag_tp_vepr12.name_id = "bm_frag_tp_vepr12_name" 
-	self.projectiles.frag_tp_vepr12.desc_id = "bm_frag_tp_vepr12_desc" 
-	self.projectiles.frag_tp_vepr12.unit = "units/payday2/weapons/wpn_frag_grenade_com/frag_tp_vepr12" 
-	self.projectiles.frag_tp_vepr12.no_cheat_count = true 
-	self.projectiles.frag_tp_vepr12.time_cheat = 0.1 
-	self.projectiles.frag_tp_vepr12.dlc = nil 
-	table.insert(self._projectiles_index, "frag_tp_vepr12") 
 	self.projectiles.frag_tp_vhs = {} 
 	self.projectiles.frag_tp_vhs = deep_clone(self.projectiles.frag) 
 	self.projectiles.frag_tp_vhs.name_id = "bm_frag_tp_vhs_name" 
@@ -1142,15 +998,6 @@ Hooks:PostHook(BlackMarketTweakData, "_init_projectiles", "ThirdWeapon_BMTweakDa
 	self.projectiles.frag_tp_vhs.time_cheat = 0.1 
 	self.projectiles.frag_tp_vhs.dlc = nil 
 	table.insert(self._projectiles_index, "frag_tp_vhs") 
-	self.projectiles.frag_tp_volmer = {} 
-	self.projectiles.frag_tp_volmer = deep_clone(self.projectiles.frag) 
-	self.projectiles.frag_tp_volmer.name_id = "bm_frag_tp_volmer_name" 
-	self.projectiles.frag_tp_volmer.desc_id = "bm_frag_tp_volmer_desc" 
-	self.projectiles.frag_tp_volmer.unit = "units/payday2/weapons/wpn_frag_grenade_com/frag_tp_volmer" 
-	self.projectiles.frag_tp_volmer.no_cheat_count = true 
-	self.projectiles.frag_tp_volmer.time_cheat = 0.1 
-	self.projectiles.frag_tp_volmer.dlc = nil 
-	table.insert(self._projectiles_index, "frag_tp_volmer") 
 	self.projectiles.frag_tp_wa2000 = {} 
 	self.projectiles.frag_tp_wa2000 = deep_clone(self.projectiles.frag) 
 	self.projectiles.frag_tp_wa2000.name_id = "bm_frag_tp_wa2000_name" 
@@ -1169,15 +1016,6 @@ Hooks:PostHook(BlackMarketTweakData, "_init_projectiles", "ThirdWeapon_BMTweakDa
 	self.projectiles.frag_tp_winchester1874.time_cheat = 0.1 
 	self.projectiles.frag_tp_winchester1874.dlc = nil 
 	table.insert(self._projectiles_index, "frag_tp_winchester1874") 
-	self.projectiles.frag_tp_winchester1894 = {} 
-	self.projectiles.frag_tp_winchester1894 = deep_clone(self.projectiles.frag) 
-	self.projectiles.frag_tp_winchester1894.name_id = "bm_frag_tp_winchester1894_name" 
-	self.projectiles.frag_tp_winchester1894.desc_id = "bm_frag_tp_winchester1894_desc" 
-	self.projectiles.frag_tp_winchester1894.unit = "units/payday2/weapons/wpn_frag_grenade_com/frag_tp_winchester1894" 
-	self.projectiles.frag_tp_winchester1894.no_cheat_count = true 
-	self.projectiles.frag_tp_winchester1894.time_cheat = 0.1 
-	self.projectiles.frag_tp_winchester1894.dlc = nil 
-	table.insert(self._projectiles_index, "frag_tp_winchester1894") 
 	self.projectiles.frag_tp_x_1911 = {} 
 	self.projectiles.frag_tp_x_1911 = deep_clone(self.projectiles.frag) 
 	self.projectiles.frag_tp_x_1911.name_id = "bm_frag_tp_x_1911_name" 
@@ -1295,22 +1133,4 @@ Hooks:PostHook(BlackMarketTweakData, "_init_projectiles", "ThirdWeapon_BMTweakDa
 	self.projectiles.frag_tp_x_usp.time_cheat = 0.1 
 	self.projectiles.frag_tp_x_usp.dlc = nil 
 	table.insert(self._projectiles_index, "frag_tp_x_usp") 
-	self.projectiles.frag_tp_xm21 = {} 
-	self.projectiles.frag_tp_xm21 = deep_clone(self.projectiles.frag) 
-	self.projectiles.frag_tp_xm21.name_id = "bm_frag_tp_xm21_name" 
-	self.projectiles.frag_tp_xm21.desc_id = "bm_frag_tp_xm21_desc" 
-	self.projectiles.frag_tp_xm21.unit = "units/payday2/weapons/wpn_frag_grenade_com/frag_tp_xm21" 
-	self.projectiles.frag_tp_xm21.no_cheat_count = true 
-	self.projectiles.frag_tp_xm21.time_cheat = 0.1 
-	self.projectiles.frag_tp_xm21.dlc = nil 
-	table.insert(self._projectiles_index, "frag_tp_xm21") 
-	self.projectiles.frag_tp_xm8 = {} 
-	self.projectiles.frag_tp_xm8 = deep_clone(self.projectiles.frag) 
-	self.projectiles.frag_tp_xm8.name_id = "bm_frag_tp_xm8_name" 
-	self.projectiles.frag_tp_xm8.desc_id = "bm_frag_tp_xm8_desc" 
-	self.projectiles.frag_tp_xm8.unit = "units/payday2/weapons/wpn_frag_grenade_com/frag_tp_xm8" 
-	self.projectiles.frag_tp_xm8.no_cheat_count = true 
-	self.projectiles.frag_tp_xm8.time_cheat = 0.1 
-	self.projectiles.frag_tp_xm8.dlc = nil 
-	table.insert(self._projectiles_index, "frag_tp_xm8") 
 end) 

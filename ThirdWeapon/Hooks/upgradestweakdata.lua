@@ -1,7 +1,5 @@
 Hooks:PostHook(UpgradesTweakData, "init", "ThirdWeapon_UPTweakData", function(self) 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_aa12") 
-	table.insert(self.level_tree[1].upgrades, "frag_tp_aek971") 
-	table.insert(self.level_tree[1].upgrades, "frag_tp_ak12") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_ak5") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_ak74") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_akm") 
@@ -15,7 +13,6 @@ Hooks:PostHook(UpgradesTweakData, "init", "ThirdWeapon_UPTweakData", function(se
 	table.insert(self.level_tree[1].upgrades, "frag_tp_b682") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_b92fs") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_baka") 
-	table.insert(self.level_tree[1].upgrades, "frag_tp_bar") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_basset") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_benelli") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_boot") 
@@ -41,7 +38,6 @@ Hooks:PostHook(UpgradesTweakData, "init", "ThirdWeapon_UPTweakData", function(se
 	table.insert(self.level_tree[1].upgrades, "frag_tp_g3") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_g36") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_galil") 
-	table.insert(self.level_tree[1].upgrades, "frag_tp_galilace") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_glock_17") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_glock_18c") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_gre_m79") 
@@ -52,21 +48,17 @@ Hooks:PostHook(UpgradesTweakData, "init", "ThirdWeapon_UPTweakData", function(se
 	table.insert(self.level_tree[1].upgrades, "frag_tp_huntsman") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_jowi") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_judge") 
-	table.insert(self.level_tree[1].upgrades, "frag_tp_k3") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_ksg") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_l85a2") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_lemming") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_long") 
-	table.insert(self.level_tree[1].upgrades, "frag_tp_lsat") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_m134") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_m16") 
-	table.insert(self.level_tree[1].upgrades, "frag_tp_m1894") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_m1928") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_m249") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_m32") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_m37") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_m45") 
-	table.insert(self.level_tree[1].upgrades, "frag_tp_m60") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_m95") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_mac10") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_mateba") 
@@ -76,7 +68,6 @@ Hooks:PostHook(UpgradesTweakData, "init", "ThirdWeapon_UPTweakData", function(se
 	table.insert(self.level_tree[1].upgrades, "frag_tp_mp7") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_mp9") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_msr") 
-	table.insert(self.level_tree[1].upgrades, "frag_tp_negev") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_new_m14") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_new_m4") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_new_mp5") 
@@ -87,18 +78,14 @@ Hooks:PostHook(UpgradesTweakData, "init", "ThirdWeapon_UPTweakData", function(se
 	table.insert(self.level_tree[1].upgrades, "frag_tp_packrat") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_par") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_peacemaker") 
-	table.insert(self.level_tree[1].upgrades, "frag_tp_pecheneg") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_pl14") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_plainsrider") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_polymer") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_ppk") 
-	table.insert(self.level_tree[1].upgrades, "frag_tp_qbs") 
-	table.insert(self.level_tree[1].upgrades, "frag_tp_qbu88") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_r870") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_r93") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_ray") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_rota") 
-	table.insert(self.level_tree[1].upgrades, "frag_tp_rpd") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_rpg7") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_rpk") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_s552") 
@@ -111,7 +98,6 @@ Hooks:PostHook(UpgradesTweakData, "init", "ThirdWeapon_UPTweakData", function(se
 	table.insert(self.level_tree[1].upgrades, "frag_tp_serbu") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_shrew") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_siltstone") 
-	table.insert(self.level_tree[1].upgrades, "frag_tp_sks") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_sparrow") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_spas12") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_sr2") 
@@ -121,15 +107,11 @@ Hooks:PostHook(UpgradesTweakData, "init", "ThirdWeapon_UPTweakData", function(se
 	table.insert(self.level_tree[1].upgrades, "frag_tp_tec9") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_tecci") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_tti") 
-	table.insert(self.level_tree[1].upgrades, "frag_tp_ultimax") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_usp") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_uzi") 
-	table.insert(self.level_tree[1].upgrades, "frag_tp_vepr12") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_vhs") 
-	table.insert(self.level_tree[1].upgrades, "frag_tp_volmer") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_wa2000") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_winchester1874") 
-	table.insert(self.level_tree[1].upgrades, "frag_tp_winchester1894") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_x_1911") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_x_akmsu") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_x_b92fs") 
@@ -143,13 +125,9 @@ Hooks:PostHook(UpgradesTweakData, "init", "ThirdWeapon_UPTweakData", function(se
 	table.insert(self.level_tree[1].upgrades, "frag_tp_x_shrew") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_x_sr2") 
 	table.insert(self.level_tree[1].upgrades, "frag_tp_x_usp") 
-	table.insert(self.level_tree[1].upgrades, "frag_tp_xm21") 
-	table.insert(self.level_tree[1].upgrades, "frag_tp_xm8") 
 end) 
 Hooks:PostHook(UpgradesTweakData, "_grenades_definitions", "ThirdWeapon_grenades_definitions", function(self, ...) 
 	self.definitions.frag_tp_aa12 = {category = "grenade"} 
-	self.definitions.frag_tp_aek971 = {category = "grenade"} 
-	self.definitions.frag_tp_ak12 = {category = "grenade"} 
 	self.definitions.frag_tp_ak5 = {category = "grenade"} 
 	self.definitions.frag_tp_ak74 = {category = "grenade"} 
 	self.definitions.frag_tp_akm = {category = "grenade"} 
@@ -163,7 +141,6 @@ Hooks:PostHook(UpgradesTweakData, "_grenades_definitions", "ThirdWeapon_grenades
 	self.definitions.frag_tp_b682 = {category = "grenade"} 
 	self.definitions.frag_tp_b92fs = {category = "grenade"} 
 	self.definitions.frag_tp_baka = {category = "grenade"} 
-	self.definitions.frag_tp_bar = {category = "grenade"} 
 	self.definitions.frag_tp_basset = {category = "grenade"} 
 	self.definitions.frag_tp_benelli = {category = "grenade"} 
 	self.definitions.frag_tp_boot = {category = "grenade"} 
@@ -189,7 +166,6 @@ Hooks:PostHook(UpgradesTweakData, "_grenades_definitions", "ThirdWeapon_grenades
 	self.definitions.frag_tp_g3 = {category = "grenade"} 
 	self.definitions.frag_tp_g36 = {category = "grenade"} 
 	self.definitions.frag_tp_galil = {category = "grenade"} 
-	self.definitions.frag_tp_galilace = {category = "grenade"} 
 	self.definitions.frag_tp_glock_17 = {category = "grenade"} 
 	self.definitions.frag_tp_glock_18c = {category = "grenade"} 
 	self.definitions.frag_tp_gre_m79 = {category = "grenade"} 
@@ -200,21 +176,17 @@ Hooks:PostHook(UpgradesTweakData, "_grenades_definitions", "ThirdWeapon_grenades
 	self.definitions.frag_tp_huntsman = {category = "grenade"} 
 	self.definitions.frag_tp_jowi = {category = "grenade"} 
 	self.definitions.frag_tp_judge = {category = "grenade"} 
-	self.definitions.frag_tp_k3 = {category = "grenade"} 
 	self.definitions.frag_tp_ksg = {category = "grenade"} 
 	self.definitions.frag_tp_l85a2 = {category = "grenade"} 
 	self.definitions.frag_tp_lemming = {category = "grenade"} 
 	self.definitions.frag_tp_long = {category = "grenade"} 
-	self.definitions.frag_tp_lsat = {category = "grenade"} 
 	self.definitions.frag_tp_m134 = {category = "grenade"} 
 	self.definitions.frag_tp_m16 = {category = "grenade"} 
-	self.definitions.frag_tp_m1894 = {category = "grenade"} 
 	self.definitions.frag_tp_m1928 = {category = "grenade"} 
 	self.definitions.frag_tp_m249 = {category = "grenade"} 
 	self.definitions.frag_tp_m32 = {category = "grenade"} 
 	self.definitions.frag_tp_m37 = {category = "grenade"} 
 	self.definitions.frag_tp_m45 = {category = "grenade"} 
-	self.definitions.frag_tp_m60 = {category = "grenade"} 
 	self.definitions.frag_tp_m95 = {category = "grenade"} 
 	self.definitions.frag_tp_mac10 = {category = "grenade"} 
 	self.definitions.frag_tp_mateba = {category = "grenade"} 
@@ -224,7 +196,6 @@ Hooks:PostHook(UpgradesTweakData, "_grenades_definitions", "ThirdWeapon_grenades
 	self.definitions.frag_tp_mp7 = {category = "grenade"} 
 	self.definitions.frag_tp_mp9 = {category = "grenade"} 
 	self.definitions.frag_tp_msr = {category = "grenade"} 
-	self.definitions.frag_tp_negev = {category = "grenade"} 
 	self.definitions.frag_tp_new_m14 = {category = "grenade"} 
 	self.definitions.frag_tp_new_m4 = {category = "grenade"} 
 	self.definitions.frag_tp_new_mp5 = {category = "grenade"} 
@@ -235,18 +206,14 @@ Hooks:PostHook(UpgradesTweakData, "_grenades_definitions", "ThirdWeapon_grenades
 	self.definitions.frag_tp_packrat = {category = "grenade"} 
 	self.definitions.frag_tp_par = {category = "grenade"} 
 	self.definitions.frag_tp_peacemaker = {category = "grenade"} 
-	self.definitions.frag_tp_pecheneg = {category = "grenade"} 
 	self.definitions.frag_tp_pl14 = {category = "grenade"} 
 	self.definitions.frag_tp_plainsrider = {category = "grenade"} 
 	self.definitions.frag_tp_polymer = {category = "grenade"} 
 	self.definitions.frag_tp_ppk = {category = "grenade"} 
-	self.definitions.frag_tp_qbs = {category = "grenade"} 
-	self.definitions.frag_tp_qbu88 = {category = "grenade"} 
 	self.definitions.frag_tp_r870 = {category = "grenade"} 
 	self.definitions.frag_tp_r93 = {category = "grenade"} 
 	self.definitions.frag_tp_ray = {category = "grenade"} 
 	self.definitions.frag_tp_rota = {category = "grenade"} 
-	self.definitions.frag_tp_rpd = {category = "grenade"} 
 	self.definitions.frag_tp_rpg7 = {category = "grenade"} 
 	self.definitions.frag_tp_rpk = {category = "grenade"} 
 	self.definitions.frag_tp_s552 = {category = "grenade"} 
@@ -259,7 +226,6 @@ Hooks:PostHook(UpgradesTweakData, "_grenades_definitions", "ThirdWeapon_grenades
 	self.definitions.frag_tp_serbu = {category = "grenade"} 
 	self.definitions.frag_tp_shrew = {category = "grenade"} 
 	self.definitions.frag_tp_siltstone = {category = "grenade"} 
-	self.definitions.frag_tp_sks = {category = "grenade"} 
 	self.definitions.frag_tp_sparrow = {category = "grenade"} 
 	self.definitions.frag_tp_spas12 = {category = "grenade"} 
 	self.definitions.frag_tp_sr2 = {category = "grenade"} 
@@ -269,15 +235,11 @@ Hooks:PostHook(UpgradesTweakData, "_grenades_definitions", "ThirdWeapon_grenades
 	self.definitions.frag_tp_tec9 = {category = "grenade"} 
 	self.definitions.frag_tp_tecci = {category = "grenade"} 
 	self.definitions.frag_tp_tti = {category = "grenade"} 
-	self.definitions.frag_tp_ultimax = {category = "grenade"} 
 	self.definitions.frag_tp_usp = {category = "grenade"} 
 	self.definitions.frag_tp_uzi = {category = "grenade"} 
-	self.definitions.frag_tp_vepr12 = {category = "grenade"} 
 	self.definitions.frag_tp_vhs = {category = "grenade"} 
-	self.definitions.frag_tp_volmer = {category = "grenade"} 
 	self.definitions.frag_tp_wa2000 = {category = "grenade"} 
 	self.definitions.frag_tp_winchester1874 = {category = "grenade"} 
-	self.definitions.frag_tp_winchester1894 = {category = "grenade"} 
 	self.definitions.frag_tp_x_1911 = {category = "grenade"} 
 	self.definitions.frag_tp_x_akmsu = {category = "grenade"} 
 	self.definitions.frag_tp_x_b92fs = {category = "grenade"} 
@@ -291,6 +253,4 @@ Hooks:PostHook(UpgradesTweakData, "_grenades_definitions", "ThirdWeapon_grenades
 	self.definitions.frag_tp_x_shrew = {category = "grenade"} 
 	self.definitions.frag_tp_x_sr2 = {category = "grenade"} 
 	self.definitions.frag_tp_x_usp = {category = "grenade"} 
-	self.definitions.frag_tp_xm21 = {category = "grenade"} 
-	self.definitions.frag_tp_xm8 = {category = "grenade"} 
 end) 

@@ -6,22 +6,6 @@ tweak_data.projectiles.frag_tp_aa12.tp_on = "wpn_fps_sho_aa12"
 tweak_data.projectiles.frag_tp_aa12.tp_na = "aa12" 
 tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
 table.insert(tweak_data.new_projectiles, "frag_tp_aa12") 
-tweak_data.projectiles.frag_tp_aek971 = {} 
-tweak_data.projectiles.frag_tp_aek971 = deep_clone(tweak_data.projectiles.frag_com) 
-tweak_data.projectiles.frag_tp_aek971.name_id = "bm_frag_tp_aek971_name" 
-tweak_data.projectiles.frag_tp_aek971.base_on = "concussion" 
-tweak_data.projectiles.frag_tp_aek971.tp_on = "wpn_fps_ass_aek971" 
-tweak_data.projectiles.frag_tp_aek971.tp_na = "aek971" 
-tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
-table.insert(tweak_data.new_projectiles, "frag_tp_aek971") 
-tweak_data.projectiles.frag_tp_ak12 = {} 
-tweak_data.projectiles.frag_tp_ak12 = deep_clone(tweak_data.projectiles.frag_com) 
-tweak_data.projectiles.frag_tp_ak12.name_id = "bm_frag_tp_ak12_name" 
-tweak_data.projectiles.frag_tp_ak12.base_on = "concussion" 
-tweak_data.projectiles.frag_tp_ak12.tp_on = "wpn_fps_ass_ak12" 
-tweak_data.projectiles.frag_tp_ak12.tp_na = "ak12" 
-tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
-table.insert(tweak_data.new_projectiles, "frag_tp_ak12") 
 tweak_data.projectiles.frag_tp_ak5 = {} 
 tweak_data.projectiles.frag_tp_ak5 = deep_clone(tweak_data.projectiles.frag_com) 
 tweak_data.projectiles.frag_tp_ak5.name_id = "bm_frag_tp_ak5_name" 
@@ -126,14 +110,6 @@ tweak_data.projectiles.frag_tp_baka.tp_on = "wpn_fps_smg_baka"
 tweak_data.projectiles.frag_tp_baka.tp_na = "baka" 
 tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
 table.insert(tweak_data.new_projectiles, "frag_tp_baka") 
-tweak_data.projectiles.frag_tp_bar = {} 
-tweak_data.projectiles.frag_tp_bar = deep_clone(tweak_data.projectiles.frag_com) 
-tweak_data.projectiles.frag_tp_bar.name_id = "bm_frag_tp_bar_name" 
-tweak_data.projectiles.frag_tp_bar.base_on = "concussion" 
-tweak_data.projectiles.frag_tp_bar.tp_on = "wpn_fps_ass_bar" 
-tweak_data.projectiles.frag_tp_bar.tp_na = "bar" 
-tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
-table.insert(tweak_data.new_projectiles, "frag_tp_bar") 
 tweak_data.projectiles.frag_tp_basset = {} 
 tweak_data.projectiles.frag_tp_basset = deep_clone(tweak_data.projectiles.frag_com) 
 tweak_data.projectiles.frag_tp_basset.name_id = "bm_frag_tp_basset_name" 
@@ -334,14 +310,6 @@ tweak_data.projectiles.frag_tp_galil.tp_on = "wpn_fps_ass_galil"
 tweak_data.projectiles.frag_tp_galil.tp_na = "galil" 
 tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
 table.insert(tweak_data.new_projectiles, "frag_tp_galil") 
-tweak_data.projectiles.frag_tp_galilace = {} 
-tweak_data.projectiles.frag_tp_galilace = deep_clone(tweak_data.projectiles.frag_com) 
-tweak_data.projectiles.frag_tp_galilace.name_id = "bm_frag_tp_galilace_name" 
-tweak_data.projectiles.frag_tp_galilace.base_on = "concussion" 
-tweak_data.projectiles.frag_tp_galilace.tp_on = "wpn_fps_ass_galilace" 
-tweak_data.projectiles.frag_tp_galilace.tp_na = "galilace" 
-tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
-table.insert(tweak_data.new_projectiles, "frag_tp_galilace") 
 tweak_data.projectiles.frag_tp_glock_17 = {} 
 tweak_data.projectiles.frag_tp_glock_17 = deep_clone(tweak_data.projectiles.frag_com) 
 tweak_data.projectiles.frag_tp_glock_17.name_id = "bm_frag_tp_glock_17_name" 
@@ -422,14 +390,6 @@ tweak_data.projectiles.frag_tp_judge.tp_on = "wpn_fps_pis_judge"
 tweak_data.projectiles.frag_tp_judge.tp_na = "judge" 
 tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
 table.insert(tweak_data.new_projectiles, "frag_tp_judge") 
-tweak_data.projectiles.frag_tp_k3 = {} 
-tweak_data.projectiles.frag_tp_k3 = deep_clone(tweak_data.projectiles.frag_com) 
-tweak_data.projectiles.frag_tp_k3.name_id = "bm_frag_tp_k3_name" 
-tweak_data.projectiles.frag_tp_k3.base_on = "concussion" 
-tweak_data.projectiles.frag_tp_k3.tp_on = "wpn_fps_lmg_k3" 
-tweak_data.projectiles.frag_tp_k3.tp_na = "k3" 
-tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
-table.insert(tweak_data.new_projectiles, "frag_tp_k3") 
 tweak_data.projectiles.frag_tp_ksg = {} 
 tweak_data.projectiles.frag_tp_ksg = deep_clone(tweak_data.projectiles.frag_com) 
 tweak_data.projectiles.frag_tp_ksg.name_id = "bm_frag_tp_ksg_name" 
@@ -462,14 +422,6 @@ tweak_data.projectiles.frag_tp_long.tp_on = "wpn_fps_bow_long"
 tweak_data.projectiles.frag_tp_long.tp_na = "long" 
 tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
 table.insert(tweak_data.new_projectiles, "frag_tp_long") 
-tweak_data.projectiles.frag_tp_lsat = {} 
-tweak_data.projectiles.frag_tp_lsat = deep_clone(tweak_data.projectiles.frag_com) 
-tweak_data.projectiles.frag_tp_lsat.name_id = "bm_frag_tp_lsat_name" 
-tweak_data.projectiles.frag_tp_lsat.base_on = "concussion" 
-tweak_data.projectiles.frag_tp_lsat.tp_on = "wpn_fps_lmg_lsat" 
-tweak_data.projectiles.frag_tp_lsat.tp_na = "lsat" 
-tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
-table.insert(tweak_data.new_projectiles, "frag_tp_lsat") 
 tweak_data.projectiles.frag_tp_m134 = {} 
 tweak_data.projectiles.frag_tp_m134 = deep_clone(tweak_data.projectiles.frag_com) 
 tweak_data.projectiles.frag_tp_m134.name_id = "bm_frag_tp_m134_name" 
@@ -486,14 +438,6 @@ tweak_data.projectiles.frag_tp_m16.tp_on = "wpn_fps_ass_m16"
 tweak_data.projectiles.frag_tp_m16.tp_na = "m16" 
 tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
 table.insert(tweak_data.new_projectiles, "frag_tp_m16") 
-tweak_data.projectiles.frag_tp_m1894 = {} 
-tweak_data.projectiles.frag_tp_m1894 = deep_clone(tweak_data.projectiles.frag_com) 
-tweak_data.projectiles.frag_tp_m1894.name_id = "bm_frag_tp_m1894_name" 
-tweak_data.projectiles.frag_tp_m1894.base_on = "concussion" 
-tweak_data.projectiles.frag_tp_m1894.tp_on = "wpn_fps_snp_m1894" 
-tweak_data.projectiles.frag_tp_m1894.tp_na = "m1894" 
-tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
-table.insert(tweak_data.new_projectiles, "frag_tp_m1894") 
 tweak_data.projectiles.frag_tp_m1928 = {} 
 tweak_data.projectiles.frag_tp_m1928 = deep_clone(tweak_data.projectiles.frag_com) 
 tweak_data.projectiles.frag_tp_m1928.name_id = "bm_frag_tp_m1928_name" 
@@ -534,14 +478,6 @@ tweak_data.projectiles.frag_tp_m45.tp_on = "wpn_fps_smg_m45"
 tweak_data.projectiles.frag_tp_m45.tp_na = "m45" 
 tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
 table.insert(tweak_data.new_projectiles, "frag_tp_m45") 
-tweak_data.projectiles.frag_tp_m60 = {} 
-tweak_data.projectiles.frag_tp_m60 = deep_clone(tweak_data.projectiles.frag_com) 
-tweak_data.projectiles.frag_tp_m60.name_id = "bm_frag_tp_m60_name" 
-tweak_data.projectiles.frag_tp_m60.base_on = "concussion" 
-tweak_data.projectiles.frag_tp_m60.tp_on = "wpn_fps_lmg_m60" 
-tweak_data.projectiles.frag_tp_m60.tp_na = "m60" 
-tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
-table.insert(tweak_data.new_projectiles, "frag_tp_m60") 
 tweak_data.projectiles.frag_tp_m95 = {} 
 tweak_data.projectiles.frag_tp_m95 = deep_clone(tweak_data.projectiles.frag_com) 
 tweak_data.projectiles.frag_tp_m95.name_id = "bm_frag_tp_m95_name" 
@@ -614,14 +550,6 @@ tweak_data.projectiles.frag_tp_msr.tp_on = "wpn_fps_snp_msr"
 tweak_data.projectiles.frag_tp_msr.tp_na = "msr" 
 tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
 table.insert(tweak_data.new_projectiles, "frag_tp_msr") 
-tweak_data.projectiles.frag_tp_negev = {} 
-tweak_data.projectiles.frag_tp_negev = deep_clone(tweak_data.projectiles.frag_com) 
-tweak_data.projectiles.frag_tp_negev.name_id = "bm_frag_tp_negev_name" 
-tweak_data.projectiles.frag_tp_negev.base_on = "concussion" 
-tweak_data.projectiles.frag_tp_negev.tp_on = "wpn_fps_lmg_negev" 
-tweak_data.projectiles.frag_tp_negev.tp_na = "negev" 
-tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
-table.insert(tweak_data.new_projectiles, "frag_tp_negev") 
 tweak_data.projectiles.frag_tp_new_m14 = {} 
 tweak_data.projectiles.frag_tp_new_m14 = deep_clone(tweak_data.projectiles.frag_com) 
 tweak_data.projectiles.frag_tp_new_m14.name_id = "bm_frag_tp_new_m14_name" 
@@ -702,14 +630,6 @@ tweak_data.projectiles.frag_tp_peacemaker.tp_on = "wpn_fps_pis_peacemaker"
 tweak_data.projectiles.frag_tp_peacemaker.tp_na = "peacemaker" 
 tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
 table.insert(tweak_data.new_projectiles, "frag_tp_peacemaker") 
-tweak_data.projectiles.frag_tp_pecheneg = {} 
-tweak_data.projectiles.frag_tp_pecheneg = deep_clone(tweak_data.projectiles.frag_com) 
-tweak_data.projectiles.frag_tp_pecheneg.name_id = "bm_frag_tp_pecheneg_name" 
-tweak_data.projectiles.frag_tp_pecheneg.base_on = "concussion" 
-tweak_data.projectiles.frag_tp_pecheneg.tp_on = "wpn_fps_lmg_pecheneg" 
-tweak_data.projectiles.frag_tp_pecheneg.tp_na = "pecheneg" 
-tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
-table.insert(tweak_data.new_projectiles, "frag_tp_pecheneg") 
 tweak_data.projectiles.frag_tp_pl14 = {} 
 tweak_data.projectiles.frag_tp_pl14 = deep_clone(tweak_data.projectiles.frag_com) 
 tweak_data.projectiles.frag_tp_pl14.name_id = "bm_frag_tp_pl14_name" 
@@ -742,22 +662,6 @@ tweak_data.projectiles.frag_tp_ppk.tp_on = "wpn_fps_pis_ppk"
 tweak_data.projectiles.frag_tp_ppk.tp_na = "ppk" 
 tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
 table.insert(tweak_data.new_projectiles, "frag_tp_ppk") 
-tweak_data.projectiles.frag_tp_qbs = {} 
-tweak_data.projectiles.frag_tp_qbs = deep_clone(tweak_data.projectiles.frag_com) 
-tweak_data.projectiles.frag_tp_qbs.name_id = "bm_frag_tp_qbs_name" 
-tweak_data.projectiles.frag_tp_qbs.base_on = "concussion" 
-tweak_data.projectiles.frag_tp_qbs.tp_on = "wpn_fps_shot_qbs" 
-tweak_data.projectiles.frag_tp_qbs.tp_na = "qbs" 
-tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
-table.insert(tweak_data.new_projectiles, "frag_tp_qbs") 
-tweak_data.projectiles.frag_tp_qbu88 = {} 
-tweak_data.projectiles.frag_tp_qbu88 = deep_clone(tweak_data.projectiles.frag_com) 
-tweak_data.projectiles.frag_tp_qbu88.name_id = "bm_frag_tp_qbu88_name" 
-tweak_data.projectiles.frag_tp_qbu88.base_on = "concussion" 
-tweak_data.projectiles.frag_tp_qbu88.tp_on = "wpn_fps_snp_qbu88" 
-tweak_data.projectiles.frag_tp_qbu88.tp_na = "qbu88" 
-tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
-table.insert(tweak_data.new_projectiles, "frag_tp_qbu88") 
 tweak_data.projectiles.frag_tp_r870 = {} 
 tweak_data.projectiles.frag_tp_r870 = deep_clone(tweak_data.projectiles.frag_com) 
 tweak_data.projectiles.frag_tp_r870.name_id = "bm_frag_tp_r870_name" 
@@ -790,14 +694,6 @@ tweak_data.projectiles.frag_tp_rota.tp_on = "wpn_fps_sho_rota"
 tweak_data.projectiles.frag_tp_rota.tp_na = "rota" 
 tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
 table.insert(tweak_data.new_projectiles, "frag_tp_rota") 
-tweak_data.projectiles.frag_tp_rpd = {} 
-tweak_data.projectiles.frag_tp_rpd = deep_clone(tweak_data.projectiles.frag_com) 
-tweak_data.projectiles.frag_tp_rpd.name_id = "bm_frag_tp_rpd_name" 
-tweak_data.projectiles.frag_tp_rpd.base_on = "concussion" 
-tweak_data.projectiles.frag_tp_rpd.tp_on = "wpn_fps_lmg_rpd" 
-tweak_data.projectiles.frag_tp_rpd.tp_na = "rpd" 
-tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
-table.insert(tweak_data.new_projectiles, "frag_tp_rpd") 
 tweak_data.projectiles.frag_tp_rpg7 = {} 
 tweak_data.projectiles.frag_tp_rpg7 = deep_clone(tweak_data.projectiles.frag_com) 
 tweak_data.projectiles.frag_tp_rpg7.name_id = "bm_frag_tp_rpg7_name" 
@@ -894,14 +790,6 @@ tweak_data.projectiles.frag_tp_siltstone.tp_on = "wpn_fps_snp_siltstone"
 tweak_data.projectiles.frag_tp_siltstone.tp_na = "siltstone" 
 tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
 table.insert(tweak_data.new_projectiles, "frag_tp_siltstone") 
-tweak_data.projectiles.frag_tp_sks = {} 
-tweak_data.projectiles.frag_tp_sks = deep_clone(tweak_data.projectiles.frag_com) 
-tweak_data.projectiles.frag_tp_sks.name_id = "bm_frag_tp_sks_name" 
-tweak_data.projectiles.frag_tp_sks.base_on = "concussion" 
-tweak_data.projectiles.frag_tp_sks.tp_on = "wpn_fps_ass_sks" 
-tweak_data.projectiles.frag_tp_sks.tp_na = "sks" 
-tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
-table.insert(tweak_data.new_projectiles, "frag_tp_sks") 
 tweak_data.projectiles.frag_tp_sparrow = {} 
 tweak_data.projectiles.frag_tp_sparrow = deep_clone(tweak_data.projectiles.frag_com) 
 tweak_data.projectiles.frag_tp_sparrow.name_id = "bm_frag_tp_sparrow_name" 
@@ -974,14 +862,6 @@ tweak_data.projectiles.frag_tp_tti.tp_on = "wpn_fps_snp_tti"
 tweak_data.projectiles.frag_tp_tti.tp_na = "tti" 
 tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
 table.insert(tweak_data.new_projectiles, "frag_tp_tti") 
-tweak_data.projectiles.frag_tp_ultimax = {} 
-tweak_data.projectiles.frag_tp_ultimax = deep_clone(tweak_data.projectiles.frag_com) 
-tweak_data.projectiles.frag_tp_ultimax.name_id = "bm_frag_tp_ultimax_name" 
-tweak_data.projectiles.frag_tp_ultimax.base_on = "concussion" 
-tweak_data.projectiles.frag_tp_ultimax.tp_on = "wpn_fps_lmg_ultimax" 
-tweak_data.projectiles.frag_tp_ultimax.tp_na = "ultimax" 
-tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
-table.insert(tweak_data.new_projectiles, "frag_tp_ultimax") 
 tweak_data.projectiles.frag_tp_usp = {} 
 tweak_data.projectiles.frag_tp_usp = deep_clone(tweak_data.projectiles.frag_com) 
 tweak_data.projectiles.frag_tp_usp.name_id = "bm_frag_tp_usp_name" 
@@ -998,14 +878,6 @@ tweak_data.projectiles.frag_tp_uzi.tp_on = "wpn_fps_smg_uzi"
 tweak_data.projectiles.frag_tp_uzi.tp_na = "uzi" 
 tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
 table.insert(tweak_data.new_projectiles, "frag_tp_uzi") 
-tweak_data.projectiles.frag_tp_vepr12 = {} 
-tweak_data.projectiles.frag_tp_vepr12 = deep_clone(tweak_data.projectiles.frag_com) 
-tweak_data.projectiles.frag_tp_vepr12.name_id = "bm_frag_tp_vepr12_name" 
-tweak_data.projectiles.frag_tp_vepr12.base_on = "concussion" 
-tweak_data.projectiles.frag_tp_vepr12.tp_on = "wpn_fps_shot_vepr12" 
-tweak_data.projectiles.frag_tp_vepr12.tp_na = "vepr12" 
-tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
-table.insert(tweak_data.new_projectiles, "frag_tp_vepr12") 
 tweak_data.projectiles.frag_tp_vhs = {} 
 tweak_data.projectiles.frag_tp_vhs = deep_clone(tweak_data.projectiles.frag_com) 
 tweak_data.projectiles.frag_tp_vhs.name_id = "bm_frag_tp_vhs_name" 
@@ -1014,14 +886,6 @@ tweak_data.projectiles.frag_tp_vhs.tp_on = "wpn_fps_ass_vhs"
 tweak_data.projectiles.frag_tp_vhs.tp_na = "vhs" 
 tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
 table.insert(tweak_data.new_projectiles, "frag_tp_vhs") 
-tweak_data.projectiles.frag_tp_volmer = {} 
-tweak_data.projectiles.frag_tp_volmer = deep_clone(tweak_data.projectiles.frag_com) 
-tweak_data.projectiles.frag_tp_volmer.name_id = "bm_frag_tp_volmer_name" 
-tweak_data.projectiles.frag_tp_volmer.base_on = "concussion" 
-tweak_data.projectiles.frag_tp_volmer.tp_on = "wpn_fps_lmg_volmer" 
-tweak_data.projectiles.frag_tp_volmer.tp_na = "volmer" 
-tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
-table.insert(tweak_data.new_projectiles, "frag_tp_volmer") 
 tweak_data.projectiles.frag_tp_wa2000 = {} 
 tweak_data.projectiles.frag_tp_wa2000 = deep_clone(tweak_data.projectiles.frag_com) 
 tweak_data.projectiles.frag_tp_wa2000.name_id = "bm_frag_tp_wa2000_name" 
@@ -1038,14 +902,6 @@ tweak_data.projectiles.frag_tp_winchester1874.tp_on = "wpn_fps_snp_winchester"
 tweak_data.projectiles.frag_tp_winchester1874.tp_na = "winchester1874" 
 tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
 table.insert(tweak_data.new_projectiles, "frag_tp_winchester1874") 
-tweak_data.projectiles.frag_tp_winchester1894 = {} 
-tweak_data.projectiles.frag_tp_winchester1894 = deep_clone(tweak_data.projectiles.frag_com) 
-tweak_data.projectiles.frag_tp_winchester1894.name_id = "bm_frag_tp_winchester1894_name" 
-tweak_data.projectiles.frag_tp_winchester1894.base_on = "concussion" 
-tweak_data.projectiles.frag_tp_winchester1894.tp_on = "wpn_fps_snp_winchester1894" 
-tweak_data.projectiles.frag_tp_winchester1894.tp_na = "winchester1894" 
-tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
-table.insert(tweak_data.new_projectiles, "frag_tp_winchester1894") 
 tweak_data.projectiles.frag_tp_x_1911 = {} 
 tweak_data.projectiles.frag_tp_x_1911 = deep_clone(tweak_data.projectiles.frag_com) 
 tweak_data.projectiles.frag_tp_x_1911.name_id = "bm_frag_tp_x_1911_name" 
@@ -1150,19 +1006,3 @@ tweak_data.projectiles.frag_tp_x_usp.tp_on = "wpn_fps_pis_x_usp"
 tweak_data.projectiles.frag_tp_x_usp.tp_na = "x_usp" 
 tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
 table.insert(tweak_data.new_projectiles, "frag_tp_x_usp") 
-tweak_data.projectiles.frag_tp_xm21 = {} 
-tweak_data.projectiles.frag_tp_xm21 = deep_clone(tweak_data.projectiles.frag_com) 
-tweak_data.projectiles.frag_tp_xm21.name_id = "bm_frag_tp_xm21_name" 
-tweak_data.projectiles.frag_tp_xm21.base_on = "concussion" 
-tweak_data.projectiles.frag_tp_xm21.tp_on = "wpn_fps_snp_xm21" 
-tweak_data.projectiles.frag_tp_xm21.tp_na = "xm21" 
-tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
-table.insert(tweak_data.new_projectiles, "frag_tp_xm21") 
-tweak_data.projectiles.frag_tp_xm8 = {} 
-tweak_data.projectiles.frag_tp_xm8 = deep_clone(tweak_data.projectiles.frag_com) 
-tweak_data.projectiles.frag_tp_xm8.name_id = "bm_frag_tp_xm8_name" 
-tweak_data.projectiles.frag_tp_xm8.base_on = "concussion" 
-tweak_data.projectiles.frag_tp_xm8.tp_on = "wpn_fps_ass_xm8" 
-tweak_data.projectiles.frag_tp_xm8.tp_na = "xm8" 
-tweak_data.new_projectiles = tweak_data.new_projectiles or {} 
-table.insert(tweak_data.new_projectiles, "frag_tp_xm8") 

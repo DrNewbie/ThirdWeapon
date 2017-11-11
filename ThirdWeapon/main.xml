@@ -1,6 +1,6 @@
 <mod name="ThirdWeapon"> 
 	<Localization directory="Loc" default="english.txt"/> 
-	<AssetUpdates id="21226" name="asset_updates" folder_name="ThirdWeapon" version="9" provider="modworkshop"/> 
+	<AssetUpdates id="21226" name="asset_updates" folder_name="ThirdWeapon" version="10" provider="modworkshop"/> 
 	<Hooks directory="Hooks"> 
 		<hook file="Menu_Function.lua" source_file="lib/managers/menumanager"/> 
 		<hook file="Icon_BM_Function.lua" source_file="lib/managers/blackmarketmanager"/> 
@@ -18,11 +18,10 @@
 		<hook file="playerstandard.lua" source_file="lib/units/beings/player/states/playerstandard"/> 
 		<hook file="playerinventory.lua" source_file="lib/units/beings/player/playerinventory"/> 
 		<hook file="newraycastweaponbase.lua" source_file="lib/units/weapons/newraycastweaponbase"/> 
+		<hook file="networkpeer.lua" source_file="lib/network/base/networkpeer"/> 
 	</Hooks>
 	<AddFiles directory="Assets"> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_aa12"/> 
-		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_aek971"/> 
-		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_ak12"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_ak5"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_ak74"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_akm"/> 
@@ -36,7 +35,6 @@
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_b682"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_b92fs"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_baka"/> 
-		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_bar"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_basset"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_benelli"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_boot"/> 
@@ -62,7 +60,6 @@
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_g3"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_g36"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_galil"/> 
-		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_galilace"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_glock_17"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_glock_18c"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_gre_m79"/> 
@@ -73,21 +70,17 @@
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_huntsman"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_jowi"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_judge"/> 
-		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_k3"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_ksg"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_l85a2"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_lemming"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_long"/> 
-		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_lsat"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_m134"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_m16"/> 
-		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_m1894"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_m1928"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_m249"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_m32"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_m37"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_m45"/> 
-		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_m60"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_m95"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_mac10"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_mateba"/> 
@@ -97,7 +90,6 @@
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_mp7"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_mp9"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_msr"/> 
-		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_negev"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_new_m14"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_new_m4"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_new_mp5"/> 
@@ -108,18 +100,14 @@
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_packrat"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_par"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_peacemaker"/> 
-		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_pecheneg"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_pl14"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_plainsrider"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_polymer"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_ppk"/> 
-		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_qbs"/> 
-		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_qbu88"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_r870"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_r93"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_ray"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_rota"/> 
-		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_rpd"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_rpg7"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_rpk"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_s552"/> 
@@ -132,7 +120,6 @@
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_serbu"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_shrew"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_siltstone"/> 
-		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_sks"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_sparrow"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_spas12"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_sr2"/> 
@@ -142,15 +129,11 @@
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_tec9"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_tecci"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_tti"/> 
-		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_ultimax"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_usp"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_uzi"/> 
-		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_vepr12"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_vhs"/> 
-		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_volmer"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_wa2000"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_winchester1874"/> 
-		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_winchester1894"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_x_1911"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_x_akmsu"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_x_b92fs"/> 
@@ -164,7 +147,5 @@
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_x_shrew"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_x_sr2"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_x_usp"/> 
-		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_xm21"/> 
-		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_xm8"/> 
 	</AddFiles> 
 </mod>
