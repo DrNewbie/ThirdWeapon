@@ -3,7 +3,7 @@ _G.ThirdWeaponMods = _G.ThirdWeaponMods or {}
 ThirdWeaponMods.menu_id = "ThirdWeaponMods_menu_id"
 ThirdWeaponMods.ModPath = ModPath
 ThirdWeaponMods.SaveFile = ThirdWeaponMods.SaveFile or SavePath .. "ThirdWeaponMods.txt"
-ThirdWeaponMods.Version = 10
+ThirdWeaponMods.Version = 11
 
 ThirdWeaponMods.settings = {
 	Enable = 1
@@ -108,7 +108,7 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "ThirdWeaponOptions", function( menu
 					if _factory_id then
 						local _wd = tweak_data.weapon[_weapon_id] or nil
 						local _wfd = tweak_data.weapon.factory[_factory_id] or nil
-						if _wd and _wfd then
+						if _wd  and ((not _wd.custom and not item.update_all) or item.update_all) and _wfd then
 							table.insert(_frag_ids, 'frag_tp_'.._weapon_id)
 							_new_named_ids['bm_'.._frag_ids[#_frag_ids]..'_name'] = managers.localization:to_upper_text(_wd.name_id)
 							local _desc_id = managers.localization:to_upper_text(tostring(_wd.desc_id))
