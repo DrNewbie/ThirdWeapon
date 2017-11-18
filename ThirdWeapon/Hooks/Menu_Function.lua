@@ -3,7 +3,7 @@ _G.ThirdWeaponMods = _G.ThirdWeaponMods or {}
 ThirdWeaponMods.menu_id = "ThirdWeaponMods_menu_id"
 ThirdWeaponMods.ModPath = ModPath
 ThirdWeaponMods.SaveFile = ThirdWeaponMods.SaveFile or SavePath .. "ThirdWeaponMods.txt"
-ThirdWeaponMods.Version = 11
+ThirdWeaponMods.Version = 12
 
 ThirdWeaponMods.settings = {
 	Enable = 1
@@ -76,17 +76,9 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "ThirdWeaponOptions", function( menu
 			_file:write('		<hook file="MOD_Apply_Function.lua" source_file="lib/managers/menu/blackmarketgui"/> \n')
 			_file:write('		<hook file="tweakdata.lua" source_file="lib/tweak_data/tweakdata"/> \n')
 			_file:write('		<hook file="tweakdatapd2.lua" source_file="lib/tweak_data/tweakdatapd2"/> \n')
-			_file:write('		<hook file="projectilestweakdata.lua" source_file="lib/tweak_data/blackmarket/projectilestweakdata"/> \n')
-			_file:write('		<hook file="upgradestweakdata.lua" source_file="lib/tweak_data/upgradestweakdata"/> \n')
-			_file:write('		<hook file="explosionmanager.lua" source_file="lib/managers/explosionmanager"/> \n')
-			_file:write('		<hook file="blackmarketmanager.lua" source_file="lib/managers/blackmarketmanager"/> \n')
-			_file:write('		<hook file="fraggrenade.lua" source_file="lib/units/weapons/grenades/fraggrenade"/> \n')
-			_file:write('		<hook file="projectilebase.lua" source_file="lib/units/weapons/projectiles/projectilebase"/> \n')
-			_file:write('		<hook file="basenetworksession.lua" source_file="lib/network/base/basenetworksession"/> \n')
 			_file:write('		<hook file="playerstandard.lua" source_file="lib/units/beings/player/states/playerstandard"/> \n')
 			_file:write('		<hook file="playerinventory.lua" source_file="lib/units/beings/player/playerinventory"/> \n')
 			_file:write('		<hook file="newraycastweaponbase.lua" source_file="lib/units/weapons/newraycastweaponbase"/> \n')
-			_file:write('		<hook file="networkpeer.lua" source_file="lib/network/base/networkpeer"/> \n')
 			_file:write('	</Hooks>\n')
 			local _, _, _, _weapon_lists, _, _, _, _, _ = tweak_data.statistics:statistics_table()
 			local _factory_id = ""
@@ -110,7 +102,7 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "ThirdWeaponOptions", function( menu
 						local _wfd = tweak_data.weapon.factory[_factory_id] or nil
 						if _wd  and ((not _wd.custom and not item.update_all) or item.update_all) and _wfd then
 							table.insert(_frag_ids, 'frag_tp_'.._weapon_id)
-							_new_named_ids['bm_'.._frag_ids[#_frag_ids]..'_name'] = managers.localization:to_upper_text(_wd.name_id)
+							_new_named_ids['bm_throw_'.._frag_ids[#_frag_ids]..''] = managers.localization:to_upper_text(_wd.name_id)
 							local _desc_id = managers.localization:to_upper_text(tostring(_wd.desc_id))
 							local _description_id = managers.localization:to_upper_text(tostring(_wd.description_id))
 							local _desc = ''
@@ -127,13 +119,16 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "ThirdWeaponOptions", function( menu
 							else
 								_desc = ' '
 							end
-							_new_named_ids['bm_'.._frag_ids[#_frag_ids]..'_desc'] = _desc
+							_new_named_ids['bm_throw_'.._frag_ids[#_frag_ids]..'_desc'] = _desc
 							_file:write('		<unit path="units/payday2/weapons/wpn_frag_grenade_com/'.. _frag_ids[#_frag_ids] ..'"/> \n')
 						end
 					end
 				end
 			end
 			_file:write('	</AddFiles> \n')
+			for _, _frag_id in pairs(_frag_ids) do
+				_file:write('	<Throwables id="'.._frag_id..'" based_on="concussion" name_id="bm_throw_'.._frag_id..'" time_cheat="0.1" desc_id="bm_throw_'.. _frag_id ..'_desc" no_cheat_count="true" unit="units/payday2/weapons/wpn_frag_grenade_com/'.._frag_id..'"/> \n')
+			end
 			_file:write('</mod>')
 			_file:close()
 			_file = io.open('assets/mod_overrides/ThirdWeapon/Loc/english.txt', "w+")
@@ -170,18 +165,6 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "ThirdWeaponOptions", function( menu
 				_file:write('</unit> \n')
 				_file:close()
 			end
-			_file = io.open('assets/mod_overrides/ThirdWeapon/Hooks/upgradestweakdata.lua', "w+")
-			_file:write('Hooks:PostHook(UpgradesTweakData, "init", "ThirdWeapon_UPTweakData", function(self) \n')
-			for _, _frag_id in pairs(_frag_ids) do
-				_file:write('	table.insert(self.level_tree[1].upgrades, "'.. _frag_id ..'") \n')
-			end			
-			_file:write('end) \n')
-			_file:write('Hooks:PostHook(UpgradesTweakData, "_grenades_definitions", "ThirdWeapon_grenades_definitions", function(self, ...) \n')
-			for _, _frag_id in pairs(_frag_ids) do
-				_file:write('	self.definitions.'.. _frag_id ..' = {category = "grenade"} \n')
-			end
-			_file:write('end) \n')
-			_file:close()
 			_file = io.open('assets/mod_overrides/ThirdWeapon/Hooks/tweakdatapd2.lua', "w+")
 			_file:write('Hooks:PostHook(TweakData, "_init_pd2", "ThirdWeapon_TweakData_init_pd2", function(self) \n')
 			for _, _frag_id in pairs(_frag_ids) do
@@ -194,28 +177,12 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "ThirdWeaponOptions", function( menu
 			for _, _frag_id in pairs(_frag_ids) do
 				_file:write('tweak_data.projectiles.'.. _frag_id ..' = {} \n')
 				_file:write('tweak_data.projectiles.'.. _frag_id ..' = deep_clone(tweak_data.projectiles.frag_com) \n')
-				_file:write('tweak_data.projectiles.'.. _frag_id ..'.name_id = "bm_'.. _frag_id ..'_name" \n')
+				_file:write('tweak_data.projectiles.'.. _frag_id ..'.name_id = "bm_throw_'.. _frag_id ..'" \n')
+				_file:write('tweak_data.projectiles.'.. _frag_id ..'.desc_id = "bm_throw_'.. _frag_id ..'_desc" \n')
 				_file:write('tweak_data.projectiles.'.. _frag_id ..'.base_on = "concussion" \n')
 				_file:write('tweak_data.projectiles.'.. _frag_id ..'.tp_on = "'.. managers.weapon_factory:get_factory_id_by_weapon_id(_frag_id:gsub('frag_tp_', '')) ..'" \n')
 				_file:write('tweak_data.projectiles.'.. _frag_id ..'.tp_na = "'.. _frag_id:gsub('frag_tp_', '') ..'" \n')
-				_file:write('tweak_data.new_projectiles = tweak_data.new_projectiles or {} \n')
-				_file:write('table.insert(tweak_data.new_projectiles, "'.. _frag_id ..'") \n')
 			end
-			_file:close()
-			_file = io.open('assets/mod_overrides/ThirdWeapon/Hooks/projectilestweakdata.lua', "w+")
-			_file:write('Hooks:PostHook(BlackMarketTweakData, "_init_projectiles", "ThirdWeapon_BMTweakData", function(self) \n')
-			for _, _frag_id in pairs(_frag_ids) do
-				_file:write('	self.projectiles.'.. _frag_id ..' = {} \n')
-				_file:write('	self.projectiles.'.. _frag_id ..' = deep_clone(self.projectiles.frag) \n')
-				_file:write('	self.projectiles.'.. _frag_id ..'.name_id = "bm_'.. _frag_id ..'_name" \n')
-				_file:write('	self.projectiles.'.. _frag_id ..'.desc_id = "bm_'.. _frag_id ..'_desc" \n')
-				_file:write('	self.projectiles.'.. _frag_id ..'.unit = "units/payday2/weapons/wpn_frag_grenade_com/'.. _frag_id ..'" \n')
-				_file:write('	self.projectiles.'.. _frag_id ..'.no_cheat_count = true \n')
-				_file:write('	self.projectiles.'.. _frag_id ..'.time_cheat = 0.1 \n')
-				_file:write('	self.projectiles.'.. _frag_id ..'.dlc = nil \n')
-				_file:write('	table.insert(self._projectiles_index, "'.. _frag_id ..'") \n')
-			end
-			_file:write('end) \n')
 			_file:close()
 			managers.system_menu:show({
 				title = "[Third Weapon]",
