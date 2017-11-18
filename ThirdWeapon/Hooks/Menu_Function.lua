@@ -3,7 +3,7 @@ _G.ThirdWeaponMods = _G.ThirdWeaponMods or {}
 ThirdWeaponMods.menu_id = "ThirdWeaponMods_menu_id"
 ThirdWeaponMods.ModPath = ModPath
 ThirdWeaponMods.SaveFile = ThirdWeaponMods.SaveFile or SavePath .. "ThirdWeaponMods.txt"
-ThirdWeaponMods.Version = 12
+ThirdWeaponMods.Version = 13
 
 ThirdWeaponMods.settings = {
 	Enable = 1
@@ -127,7 +127,7 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "ThirdWeaponOptions", function( menu
 			end
 			_file:write('	</AddFiles> \n')
 			for _, _frag_id in pairs(_frag_ids) do
-				_file:write('	<Throwables id="'.._frag_id..'" based_on="concussion" name_id="bm_throw_'.._frag_id..'" time_cheat="0.1" desc_id="bm_throw_'.. _frag_id ..'_desc" no_cheat_count="true" unit="units/payday2/weapons/wpn_frag_grenade_com/'.._frag_id..'"/> \n')
+				_file:write('	<Throwables id="'.._frag_id..'" based_on="concussion" icon="r870_shotgun" name_id="bm_throw_'.._frag_id..'" time_cheat="0.1" desc_id="bm_throw_'.. _frag_id ..'_desc" no_cheat_count="true" unit="units/payday2/weapons/wpn_frag_grenade_com/'.._frag_id..'"/> \n')
 			end
 			_file:write('</mod>')
 			_file:close()
