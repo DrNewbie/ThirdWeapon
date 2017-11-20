@@ -79,6 +79,9 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "ThirdWeaponOptions", function( menu
 			_file:write('		<hook file="playerstandard.lua" source_file="lib/units/beings/player/states/playerstandard"/> \n')
 			_file:write('		<hook file="playerinventory.lua" source_file="lib/units/beings/player/playerinventory"/> \n')
 			_file:write('		<hook file="newraycastweaponbase.lua" source_file="lib/units/weapons/newraycastweaponbase"/> \n')
+			_file:write('		<hook file="newraycastweaponbase.lua" source_file="lib/units/weapons/newraycastweaponbase"/> \n')
+			_file:write('		<hook file="networkmatchmakingsteam.lua" source_file="lib/network/matchmaking/networkmatchmakingsteam"/> \n')
+			_file:write('		<hook file="menunodegui.lua" source_file="lib/managers/menu/menunodegui"/> \n')
 			_file:write('	</Hooks>\n')
 			local _, _, _, _weapon_lists, _, _, _, _, _ = tweak_data.statistics:statistics_table()
 			local _factory_id = ""

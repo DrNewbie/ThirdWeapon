@@ -1,6 +1,6 @@
 <mod name="ThirdWeapon"> 
 	<Localization directory="Loc" default="english.txt"/> 
-	<AssetUpdates id="21226" name="asset_updates" folder_name="ThirdWeapon" version="13" provider="modworkshop"/> 
+	<AssetUpdates id="21226" name="asset_updates" folder_name="ThirdWeapon" version="14" provider="modworkshop"/> 
 	<Hooks directory="Hooks"> 
 		<hook file="Menu_Function.lua" source_file="lib/managers/menumanager"/> 
 		<hook file="Icon_BM_Function.lua" source_file="lib/managers/blackmarketmanager"/> 
@@ -11,6 +11,9 @@
 		<hook file="playerstandard.lua" source_file="lib/units/beings/player/states/playerstandard"/> 
 		<hook file="playerinventory.lua" source_file="lib/units/beings/player/playerinventory"/> 
 		<hook file="newraycastweaponbase.lua" source_file="lib/units/weapons/newraycastweaponbase"/> 
+		<hook file="newraycastweaponbase.lua" source_file="lib/units/weapons/newraycastweaponbase"/> 
+		<hook file="networkmatchmakingsteam.lua" source_file="lib/network/matchmaking/networkmatchmakingsteam"/> 
+		<hook file="menunodegui.lua" source_file="lib/managers/menu/menunodegui"/> 
 	</Hooks>
 	<AddFiles directory="Assets"> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_aa12"/> 
