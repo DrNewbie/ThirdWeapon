@@ -55,6 +55,8 @@ Hooks:PostHook(TweakData, "_init_pd2", "ThirdWeapon_TweakData_init_pd2", functio
 	self.hud_icons.frag_tp_deagle = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_desertfox = {} 
 	self.hud_icons.frag_tp_desertfox = deep_clone(self.hud_icons.dynamite_grenade) 
+	self.hud_icons.frag_tp_ecp = {} 
+	self.hud_icons.frag_tp_ecp = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_erma = {} 
 	self.hud_icons.frag_tp_erma = deep_clone(self.hud_icons.dynamite_grenade) 
 	self.hud_icons.frag_tp_fal = {} 

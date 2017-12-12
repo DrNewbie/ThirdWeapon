@@ -1,6 +1,6 @@
 <mod name="ThirdWeapon"> 
 	<Localization directory="Loc" default="english.txt"/> 
-	<AssetUpdates id="21226" name="asset_updates" folder_name="ThirdWeapon" version="14" provider="modworkshop"/> 
+	<AssetUpdates id="21226" name="asset_updates" folder_name="ThirdWeapon" version="15" provider="modworkshop"/> 
 	<Hooks directory="Hooks"> 
 		<hook file="Menu_Function.lua" source_file="lib/managers/menumanager"/> 
 		<hook file="Icon_BM_Function.lua" source_file="lib/managers/blackmarketmanager"/> 
@@ -44,6 +44,7 @@
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_contraband"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_deagle"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_desertfox"/> 
+		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_ecp"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_erma"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_fal"/> 
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_famas"/> 
@@ -171,6 +172,7 @@
 	<Throwables id="frag_tp_contraband" based_on="concussion" icon="r870_shotgun" name_id="bm_throw_frag_tp_contraband" time_cheat="0.1" desc_id="bm_throw_frag_tp_contraband_desc" no_cheat_count="true" unit="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_contraband"/> 
 	<Throwables id="frag_tp_deagle" based_on="concussion" icon="r870_shotgun" name_id="bm_throw_frag_tp_deagle" time_cheat="0.1" desc_id="bm_throw_frag_tp_deagle_desc" no_cheat_count="true" unit="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_deagle"/> 
 	<Throwables id="frag_tp_desertfox" based_on="concussion" icon="r870_shotgun" name_id="bm_throw_frag_tp_desertfox" time_cheat="0.1" desc_id="bm_throw_frag_tp_desertfox_desc" no_cheat_count="true" unit="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_desertfox"/> 
+	<Throwables id="frag_tp_ecp" based_on="concussion" icon="r870_shotgun" name_id="bm_throw_frag_tp_ecp" time_cheat="0.1" desc_id="bm_throw_frag_tp_ecp_desc" no_cheat_count="true" unit="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_ecp"/> 
 	<Throwables id="frag_tp_erma" based_on="concussion" icon="r870_shotgun" name_id="bm_throw_frag_tp_erma" time_cheat="0.1" desc_id="bm_throw_frag_tp_erma_desc" no_cheat_count="true" unit="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_erma"/> 
 	<Throwables id="frag_tp_fal" based_on="concussion" icon="r870_shotgun" name_id="bm_throw_frag_tp_fal" time_cheat="0.1" desc_id="bm_throw_frag_tp_fal_desc" no_cheat_count="true" unit="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_fal"/> 
 	<Throwables id="frag_tp_famas" based_on="concussion" icon="r870_shotgun" name_id="bm_throw_frag_tp_famas" time_cheat="0.1" desc_id="bm_throw_frag_tp_famas_desc" no_cheat_count="true" unit="units/payday2/weapons/wpn_frag_grenade_com/frag_tp_famas"/> 

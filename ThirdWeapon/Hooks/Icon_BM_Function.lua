@@ -12,3 +12,12 @@ function BlackMarketManager:player_loadout_data(...)
 	end
 	return _R
 end
+
+function BlackMarketManager:view_tp_weapon(factory_id, blueprint, open_node_cb)
+	self._last_viewed_cosmetic_id = nil
+	self:preload_weapon_blueprint("preview", factory_id, blueprint)
+	table.insert(self._preloading_list, {done_cb = function ()
+		managers.menu_scene:spawn_item_weapon(factory_id, blueprint)
+	end})
+	table.insert(self._preloading_list, {done_cb = open_node_cb})
+end

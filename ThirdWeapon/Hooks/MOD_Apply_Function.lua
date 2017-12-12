@@ -86,3 +86,18 @@ Hooks:PostHook(BlackMarketGui, "populate_weapon_category_new", "BlackMarketGUIPo
 		end
 	end
 end)
+
+local ThirdWeapon_preview = BlackMarketGui.preview_grenade_callback
+
+function BlackMarketGui:preview_grenade_callback(data)
+	if type(data.name) == "string" and tweak_data.projectiles[data.name].tp_na and tweak_data.projectiles[data.name].tp_on then
+		local factory_id = tweak_data.projectiles[data.name].tp_on
+		local _wfd = tweak_data.weapon.factory[factory_id] or nil
+		if _wfd then
+			local blueprint = ThirdWeaponMods.settings[data.name] or _wfd.default_blueprint
+			managers.blackmarket:view_tp_weapon(factory_id, blueprint, callback(self, self, "_open_preview_node"))
+			return
+		end
+	end
+	ThirdWeapon_preview(self, data)
+end
