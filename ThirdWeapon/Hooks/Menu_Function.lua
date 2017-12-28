@@ -3,7 +3,7 @@ _G.ThirdWeaponMods = _G.ThirdWeaponMods or {}
 ThirdWeaponMods.menu_id = "ThirdWeaponMods_menu_id"
 ThirdWeaponMods.ModPath = ModPath
 ThirdWeaponMods.SaveFile = ThirdWeaponMods.SaveFile or SavePath .. "ThirdWeaponMods.txt"
-ThirdWeaponMods.Version = 15
+ThirdWeaponMods.Version = 16
 
 ThirdWeaponMods.settings = {
 	Enable = 1
