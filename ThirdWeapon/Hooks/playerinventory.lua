@@ -1,6 +1,6 @@
 _G.ThirdWeaponMods = _G.ThirdWeaponMods or {}
 
-local TP_Weapon_Ammo_Cost = 0.45
+local TP_Weapon_Ammo_Cost = 0.25
 
 function PlayerInventory:equip_selected_third(_run)
 	if not _run then
